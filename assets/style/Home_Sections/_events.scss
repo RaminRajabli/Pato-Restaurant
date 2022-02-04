@@ -1,0 +1,323 @@
+
+.events{
+    width: 100%;
+    height: auto;
+    // height: 1200px;
+    position: relative;
+    &-container{
+        width: 100%;
+      
+        .slider{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+           .event-intro{
+               position: absolute;
+               z-index: 10;
+               top: 110px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               flex-direction: column;
+               span{
+                   font-family: Courgette;
+                   font-size: 30px;
+                   line-height: 1.2;
+                   color: #d61c22;
+                   text-align: center;
+                }
+                h2{
+                    font-family: Poppins;
+                    font-weight: 700;
+                    font-size: 50px;
+                    line-height: 1.2;
+                    color: #fff;
+                    text-transform: uppercase;
+                    letter-spacing: 6px;
+                    word-spacing: 6px;
+                    text-align: center;
+               }
+           }
+            .slides{
+                width: 100%;
+                // height: 100vh;
+                
+                &:hover .arrow{
+                    opacity: 0.5;
+                    visibility: visible;
+                }
+                .swiper-pagination{
+                    @include center;
+                    position: absolute;
+                    bottom: 95px;
+                    &-bullet{
+                        width: 10px;
+                        height: 10px;
+                        display: flex;
+                        // padding: 1px;
+                        margin: 5px;
+                        color: transparent;
+                        opacity: 1;
+                        background-color: #958e88;
+                        transition: background-color 1s;
+                        transition: border-color 1s;
+                        border-radius: 50%;
+                        cursor:pointer;
+                        &:hover{
+                                 background-color: #ec1d25; 
+                                //  padding:3px;
+                                 margin: 5px;
+                                 border: 1px solid #d41b22;
+                         }
+ 
+                    }
+                }
+
+                .arrow{
+                    color: white;
+                    cursor:pointer;
+                    @include center;
+                    background-color: #000;
+
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    transform: translateY(-50%);
+                    border-radius: 50%;
+                    transition: 0.5s;
+                    visibility: hidden;
+                    opacity: 0;
+                    &:hover{
+                        background-color:#ec1d25;
+                    }
+                }
+                .swiper-button-prev::after{
+                    content:"";
+                  }
+  
+                  .swiper-button-next::after{
+                      content: "";
+                  }
+                  .left_arrow{
+                      position: absolute;
+                      left:60px;
+                      top:470px;
+                  }
+  
+                  .right_arrow{
+                      position: absolute;
+                      top:470px;
+                      right: 60px;                 
+                  }
+  
+                .slide{
+                    height: 850px;
+                    // height: 300px;
+                    position: relative;
+                    @include center;
+
+                    .card{
+                        // padding: 0 20px;
+                        bottom: 205px;
+                        max-width: 1140px;
+                      
+                        margin: 0 30px;
+                        height: 390px;
+                        display: flex;
+                    
+                        height: 390px;
+                        position: absolute;
+                        border-radius: 10px!important;
+                        overflow: hidden;
+                        .picture{
+                            position: relative;
+                            width: 50%;
+                            height: 100%;
+                            figure{
+                                width: 100%;
+                                height: 100%;
+                                img{
+                                    width: 100%;
+                                    height: 390px;
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+                        span{
+                            @include center;
+                            position: absolute;
+                            top: 50%;
+                            left: 24px;
+                            width: 390px;
+                            height: 50px;
+                            transform-origin: center center;
+                            background-color: #ec1d25;
+                            transform: rotateZ(90deg);
+                            transform: translate(-50%,-50%) rotateZ(90deg);
+
+                            font-family: Montserrat;
+                            font-weight: 400;
+                            font-size: 12px;
+                            color: #fff;
+                            opacity: 0.9;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+
+                        }
+                        .content{
+                            width: 50%;
+                            background-color: #fff;
+                            @include center;
+                            flex-direction: column;
+                            padding: 0 40px;
+                            ul{
+                                width: 90%;
+                                display: flex;
+                                justify-content: space-around;
+                                align-items: center;
+                                margin-bottom: 40px;
+
+                                font-family: Montserrat;
+                                font-weight: 700;
+                                font-size: 50px;
+                                color: #ec1d25;
+                                line-height: 1.1;
+                                text-transform: uppercase;
+                                letter-spacing: 3px;
+                                text-align: center;
+
+                                
+                                li{
+                                    @include center;
+                                    width: 70px;
+                                    font-family: Montserrat;
+                                    font-weight: 700;
+                                    font-size: 50px;
+                                    color: #ec1d25;
+                                    line-height: 1.1;
+                                    text-transform: uppercase;
+                                    letter-spacing: 3px;
+                                    text-align: center;
+                                    position: relative;
+                                }
+                                .event_days::after{
+                                    position: absolute;
+                                    content: "days";
+                                    top: 100%;
+                                    width: 70px;
+                                    @include center;
+                                    left: 35px;
+                                    transform: translateX(-50%);
+                                    font-family: Montserrat;
+                                    font-weight: 700;
+                                    font-size: 12px;
+                                    color: #999;
+                                    text-transform: uppercase;
+                                    letter-spacing: 1px;                                
+                                }
+
+                                .event_hours::after{
+                                    position: absolute;
+                                    content: "hours";
+                                    top: 100%;
+                                    width: 70px;
+                                    @include center;
+                                    // left: 35px;
+                                    font-family: Montserrat;
+                                    font-weight: 700;
+                                    font-size: 12px;
+                                    color: #999;
+                                    text-transform: uppercase;
+                                    letter-spacing: 1px;                                
+                                }
+
+                                .event_minutes::after{
+                                    position: absolute;
+                                    content: "minutes";
+                                    top: 100%;
+                                    width: 70px;
+                                    @include center;
+                                    // left: 35px;
+                                    font-family: Montserrat;
+                                    font-weight: 700;
+                                    font-size: 12px;
+                                    color: #999;
+                                    text-transform: uppercase;
+                                    letter-spacing: 1px;                                
+                                }
+
+                                .event_seconds::after{
+                                    position: absolute;
+                                    content: "seconds";
+                                    top: 100%;
+                                    width: 70px;
+                                    @include center;
+                                    // left: 35px;
+                                    font-family: Montserrat;
+                                    font-weight: 700;
+                                    font-size: 12px;
+                                    color: #999;
+                                    text-transform: uppercase;
+                                    letter-spacing: 1px;                                
+                                }
+                            }
+                            h4{
+                                font-family: Poppins;
+                                font-weight: 500;
+                                font-size: 22px;
+                                line-height: 1.2;
+                                color: #222;
+                                text-transform: uppercase;
+                                letter-spacing: 3px;
+                                text-align:center;
+                            }
+                            p{
+                                font-family: Montserrat;
+                                font-weight: 400;
+                                font-size: 15px;
+                                line-height: 1.7;
+                                color: #666;
+                                text-align: center;
+                                margin: 20px 0;
+                            }
+
+                            a{
+                                font-family: Montserrat;
+                                font-weight: 400;
+                                font-size: 12px;
+                                color: #222;
+                                text-transform: uppercase;
+                                letter-spacing: 1px;
+                                transition: 0.5s;
+                                margin-top: 15px;
+                                &:hover{
+                                    color: #d61c22;
+                                }
+                                i{
+                                    padding-left: 9px;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                        
+                    }
+                    figure{
+                        width: 100%;
+                        height: 100%;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    
+    
+}

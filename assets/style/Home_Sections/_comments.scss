@@ -1,0 +1,184 @@
+.comments{
+    width: 100%;
+    height: auto;
+    // height: 1200px;
+    position: relative;
+    &-container{
+        width: 100%;
+        .slider{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            .comments-intro{
+                position: absolute;
+                z-index: 10;
+                top: 110px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                span{
+                    font-family: Courgette;
+                    font-size: 30px;
+                    line-height: 1.2;
+                    color: #d61c22;
+                    text-align: center;
+                 }
+                 h2{
+                     font-family: Poppins;
+                     font-weight: 700;
+                     font-size: 50px;
+                     line-height: 1.2;
+                     color: #222;
+                     text-transform: uppercase;
+                     letter-spacing: 6px;
+                     word-spacing: 6px;
+                     text-align: center;
+                }
+            }
+                // height: 100vh;
+                
+            &:hover .arrow{
+                    opacity: 0.5;
+                    visibility: visible;
+            }
+
+            .swiper-pagination{
+                    @include center;
+                    position: absolute;
+                    bottom: 85px;
+                    &-bullet{
+                        width: 10px;
+                        height: 10px;
+                        display: flex;
+                        // padding: 1px;
+                        margin:0 5px;
+                        color: transparent;
+                        opacity: 1;
+                        background-color: #ccc;
+                        transition: background-color 1s;
+                        transition: border-color 1s;
+                        border-radius: 50%;
+                        cursor:pointer;
+                        &:hover{
+                                 background-color: #ec1d25; 
+                                //  padding:3px;
+                                 margin:0 4px;
+                                 border: 1px solid #d41b22;
+                         }
+ 
+                    }
+                }
+
+            .arrow{
+                    color: white;
+                    cursor:pointer;
+                    @include center;
+                    background-color: #000;
+
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    transform: translateY(-50%);
+                    border-radius: 50%;
+                    transition: 0.5s;
+                    visibility: hidden;
+                    opacity: 0;
+                    &:hover{
+                        background-color:#ec1d25;
+                    }
+            }
+            .swiper-button-prev::after{
+                    content:"";
+            }
+  
+            .swiper-button-next::after{
+                      content: "";
+            }
+            .left_arrow{
+                      position: absolute;
+                      left:60px;
+                      top:470px;
+            }
+  
+            .right_arrow{
+                      position: absolute;
+                      top:470px;
+                      right: 60px;                 
+            }
+
+            .slide{
+                    height: 600px;
+                    // height: 300px;
+                    margin-top:130px;
+                    position: relative;
+                    @include center;
+                    flex-direction: column;
+                    .customer_picture{
+                        width: 118px;
+                        height: 118px;
+                        border: 4px solid #ec1d25;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        margin-bottom: 33px;
+                        figure{
+                            width: 100%;
+                            height: 100%;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+
+                    .customer-content{
+                        @include center;
+                        p{
+                            max-width: 790px;
+                            font-family: Montserrat;
+                            font-weight: 400;
+                            font-size: 18px;
+                            color: #666;
+                            line-height: 1.7;
+                            text-align: center;
+                            
+                        }
+                        ul{
+                            @include center;
+                            flex-direction: column;
+                            .customer_ratings{
+                                margin:15px 0 25px 0;
+                                .checked{
+                                    color: #ec1d25;
+                                }
+                            }
+
+                            span{
+                                font-family: Montserrat;
+                                font-weight: 400;
+                                font-size: 12px;
+                                color: #222;
+                                text-transform: uppercase;
+                                letter-spacing: 1px;
+                            }
+                        }
+                    }
+            }
+            
+        }
+
+
+        .animate__zoomIn{
+            animation-delay: 0.3s;
+            animation-duration: 0.7s;
+        }
+        .animate__fadeInUp{
+            animation-delay: 1s;
+            animation-duration: 0.8s;
+        }
+    }
+}

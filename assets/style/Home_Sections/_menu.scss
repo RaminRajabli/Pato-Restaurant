@@ -1,0 +1,180 @@
+.menu_section{
+    width: 100%;
+    height: 100%;
+    @include center;
+    flex-direction: column;
+    background-image: url("/assets/images/Home_Page/Menu/background.webp");
+    padding: 115px 0 120px 0;
+    &-intro{
+        @include center;
+        flex-direction: column;
+        margin-bottom: 35px;
+        span{
+            font-family: Courgette;
+            font-size: 30px;
+            line-height: 1.2;
+            color: #d61c22;
+            text-align: center;
+        }
+        h2{
+            font-family: Poppins;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 1.2;
+            color: #222;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            word-spacing: 8px;
+            text-align: center;
+        }
+    }
+    &-container{
+        height: 80%;
+        max-width: 1200px;
+        @include space-between;
+        padding: 0 30px;
+        &--left{
+            width: 64%;
+            .upper-side{
+                width: 100%;
+                margin-bottom: 27px;
+                @include space-between;
+                .card{
+                    width: 48%;
+                    height: 511px;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    &:hover{
+                            img{
+                                transform: scale(1.1);
+                            }
+                    }
+                    figure{
+                        width: 100%;
+                        height: 100%;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 10px;
+                            transition: 0.5s;
+                        }
+                    }
+                }
+            }
+
+            .lower-side{
+                width: 100%;
+                height: 242px;
+                overflow: hidden;
+                border-radius: 10px;
+                overflow: hidden;
+
+                position: relative;
+                a{
+                    z-index: 10;
+                    background-color: #fff;
+                    border-radius: 10px;
+                    opacity: .9;
+                    width: 225px;
+                    height: 60px;
+                    font-family: Poppins;
+                    font-weight: 500;
+                    font-size: 22px;
+                    color: #333;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    @include center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    transition: 0.7s;
+                    position: absolute;
+                    &:hover{
+                        color: #fff;
+                        background-color: #d61c22;
+                    }
+                }
+                
+                &:hover{
+                     img{
+                            transform: scale(1.1);
+                    }
+                }
+                figure{
+                    width: 100%;
+                    height: 100%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 10px;
+                        transition: 0.5s;
+                    }
+                }
+
+            }
+        }
+        &--right{
+            width: 30.72%;
+            height: 100%;
+            @include center;
+            flex-direction: column;
+            .card{
+                width: 100%;
+                height: 242px;
+                overflow: hidden;
+                border-radius: 10px;
+                overflow: hidden;
+                &:hover{
+                     img{
+                            transform: scale(1.1);
+                    }
+                }
+                &:not(:last-child){
+                    margin-bottom: 27px;
+                }
+                figure{
+                    width: 100%;
+                    height: 100%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 10px;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+    }
+
+    .card{
+        position: relative;
+        a{
+            position: absolute;
+            z-index: 10;
+            background-color: #fff;
+            border-radius: 10px;
+            opacity: .9;
+            width: 150px;
+            height: 60px;
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 22px;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            @include center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            transition: 0.7s;
+            &:hover{
+                color: #fff;
+                background-color: #d61c22;
+            }
+        }
+    }
+}

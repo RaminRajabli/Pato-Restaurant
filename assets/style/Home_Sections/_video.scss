@@ -1,0 +1,61 @@
+.video{
+    @include center;
+    width: 100%;
+    padding-top: 225px;
+    padding-bottom: 250px;
+    flex-direction: column;
+    
+    background-image: url("/assets/images/Home_Page/Comments/our\ vider.webp");
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &-container{
+        &--intro{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            span{
+                font-family: Courgette;
+                font-size: 30px;
+                line-height: 1.2;
+                color: #d61c22;
+                text-align: center;
+             }
+             h2{
+                 font-family: Poppins;
+                 font-weight: 700;
+                 font-size: 50px;
+                 line-height: 1.2;
+                 color: #fff;
+                 text-transform: uppercase;
+                 letter-spacing: 6px;
+                 word-spacing: 6px;
+                 text-align: center;
+                 padding-bottom: 60px ;
+            }
+            .icon{
+                @include center;
+                width: 70px;
+                height: 70px;
+                background-color: #fff;
+                border-radius: 50%;
+                transition: 0.5s;
+                cursor: pointer;
+                i{
+                    font-size: 18px;
+                }
+                &:hover{
+                    transform: scale(1.2);
+                    background-color: rgba(236,29,37,.5);
+                    i{
+                        color: #fff;
+                    }
+                }
+    
+            }
+        }
+    }
+}

@@ -1,0 +1,117 @@
+.discover{
+    width: 100%;
+    @include center;
+    &-container{
+        // max-width: 1200px;
+        width: 100%;
+        @include space-around;
+        flex-direction: column;
+        &--intro{
+            @include center;
+            width: 100%;
+            flex-direction: column;
+            padding-top: 135px;
+            padding-bottom: 158px;
+
+            background-image: url("/assets/images/Home_Page/Discover/parallax.webp");
+
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            span{
+                font-family: Courgette;
+                font-size: 30px;
+                line-height: 1.2;
+                color: #d61c22;
+                text-align: center;
+            }
+            h2{
+                font-family: Poppins;
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 1.2;
+                color: #fff;
+                text-transform: uppercase;
+                letter-spacing: 10px;
+                word-spacing: 6px;
+                text-align: center;
+            }
+        }
+
+        &--cards{
+            max-width: 1200px;
+            @include space-between;
+            padding: 0 30px;
+            margin-top: 77px;
+            margin-bottom: 133px;
+            &--card{
+                width: 30%;
+                height: 100%;
+                .pic{
+                    width: 100%;
+                    height: 220px;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    figure{
+                        width: 100%;
+                        height: 100%;
+                        overflow: hidden;
+                        &:hover{
+                            img{
+                                transform: scale(1.1);
+                            }
+                        }
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 10px;
+                            transition: 0.5s;
+                            object-fit: cover;
+                        }
+                    }
+                }
+           
+                h3{
+                    font-family: Poppins;
+                    font-weight: 500;
+                    font-size: 22px;
+                    color: #333;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    margin: 35px 0 13px 0;
+                    transition: 0.5s;
+                    &:hover{
+                        color: #d61c22;
+                    }
+                }
+                p{
+                    font-family: Montserrat;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 1.7;
+                    color: #666;
+                    margin-bottom: 20px;
+                    height: 47px;
+                }
+                a{
+                    font-family: Montserrat;
+                    font-weight: 400;
+                    font-size: 12px;
+                    color: #222;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    transition: 0.5s;
+                    &:hover{
+                        color: #d61c22;
+                    }
+                    i{
+                        padding-left: 9px;
+                        font-size: 12px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
