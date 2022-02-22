@@ -1,0 +1,158 @@
+.leaving_comment {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
+}
+
+.leaving_comment form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.leaving_comment form h4 {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 22px;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-bottom: 15px;
+}
+
+.leaving_comment form p {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #666;
+}
+
+.leaving_comment form textarea {
+  width: 100%;
+  resize: none;
+  height: 150px;
+  border-style: none;
+  outline-style: none;
+  margin: 30px 0;
+  border: 2px solid #d9d9d9;
+  padding-left: 20px;
+  padding-top: 15px;
+  border-radius: 10px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  color: #666;
+}
+
+.leaving_comment form textarea:focus {
+  border: 2px solid #d61c22;
+}
+
+.leaving_comment form button {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 180px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #222;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-top: 30px;
+  font-family: Montserrat;
+}
+
+.leaving_comment form button:hover {
+  background-color: #d41b22;
+}
+
+.leaving_comment form input {
+  width: 250px;
+  height: 50px;
+  border-radius: 10px;
+  border-style: none;
+  outline-style: none;
+  margin-bottom: 20px;
+  border: 2px solid #d9d9d9;
+  padding-left: 20px;
+  color: #666;
+}
+
+.leaving_comment form input:focus {
+  border: 2px solid #d61c22;
+}
+
+.leaving_comment form input::-webkit-input-placeholder {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.leaving_comment form input:-ms-input-placeholder {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.leaving_comment form input::-ms-input-placeholder {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.leaving_comment form input::placeholder {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.leaving_comment form .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+/*# sourceMappingURL=comment.css.map */

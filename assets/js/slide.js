@@ -1,135 +1,137 @@
-let slides = document.querySelectorAll(".content");
 
-let animated = document.querySelectorAll(".animate__animated")
-
-
-var swipe = new Swiper(".mySwiper", {
-    spaceBetween: 30,
-    autoplay:{
-        delay:7000,
-        disableOnInteraction: false,
-    },
-    speed:400,
-    loop:true,
-    effect: "fade",
-    navigation: {
-      nextEl: ".swiper-button-next1",
-      prevEl: ".swiper-button-prev1",
-    },
-    pagination: {
-      el: ".swiper-pagination1",
-      clickable: true,
-    },
-
-    on:{
-        slideChange:function(swiper){
-            animated.forEach(element=>{
-                if(element.classList.contains("main3")){
-                    setTimeout(()=>{
+setTimeout(()=>{
+    let slides = document.querySelectorAll(".content");
+    let animated = document.querySelectorAll(".animate__animated")
+    var swipe = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        autoplay:{
+            delay:7000,
+            disableOnInteraction: false,
+        },
+        loop:true,
+        speed:400,
+        effect: "fade",
+        navigation: {
+          nextEl: ".swiper-button-next1",
+          prevEl: ".swiper-button-prev1",
+        },
+        pagination: {
+          el: ".swiper-pagination1",
+          clickable: true,
+        },
+    
+        on:{
+            slideChange:function(swiper){
+                animated.forEach(element=>{
+                    if(element.classList.contains("main3")){
+                        setTimeout(()=>{
+                            
+                            element.classList.add("animate__animated","animate__rotateInDownLeft");
+                            element.addEventListener('animationend',()=>{
+                                // console.log("bitfi");
+                                element.classList.remove("animate__animated","animate__rotateInDownLeft");
+                                
+                            })
+                        },0)
+                    }
+    
+                    if(element.classList.contains("text3")){
+    
+                        setTimeout(()=>{
+                            element.classList.add("animate__animated","animate__rotateInUpRight");
+                            element.addEventListener('animationend',()=>{
+                                // console.log("bitfi");
+                                element.classList.remove("animate__animated","animate__rotateInUpRight");
+                                
+                            })
+                        },0)
                         
-                        element.classList.add("animate__animated","animate__rotateInDownLeft");
-                        element.addEventListener('animationend',()=>{
-                            // console.log("bitfi");
-                            element.classList.remove("animate__animated","animate__rotateInDownLeft");
+                    }
+                    if(element.classList.contains("button3")){
+                        setTimeout(()=>{
+                            element.classList.add("animate__animated","animate__rotateIn");
+                            element.addEventListener('animationend',()=>{
+                                // console.log("bitfi");
+                                element.classList.remove("animate__animated","animate__rotateIn");
+                                
+                            })
+                        },0)
+                    }
+    
+    
+                    if(element.classList.contains("main1")){
+                        setTimeout(()=>{
+                            element.classList.add("animate__animated","animate__fadeInDown");
+                            element.addEventListener('animationend',()=>{
+                                // console.log("bitfi");
+                                element.classList.remove("animate__animated","animate__fadeInDown");
+                                
+                            })
+                        },0)
+                    }
+    
+                    if(element.classList.contains("text1")){
+                        setTimeout(()=>{
+                            element.classList.add("animate__animated","animate__fadeInUp");
+                            element.addEventListener('animationend',()=>{
+                                // console.log("bitfi");
+                                element.classList.remove("animate__animated","animate__fadeInUp");
+                               
+                            })
+                        },0)
+                     }
+                     if(element.classList.contains("button1")){
+                        setTimeout(()=>{
+                            element.classList.add("animate__animated","animate__zoomIn");
+                            element.addEventListener('animationend',()=>{
+                                element.classList.remove("animate__animated","animate__zoomIn");
+                               
+                            })
+                        },0)
+                        //  console.log(element)
+                    }
+    
+                     
+                    if(element.classList.contains("main2")){
+                        setTimeout(()=>{
+                            element.classList.add("animate__animated","animate__rollIn");
+                            element.addEventListener('animationend',()=>{
+                                // console.log("bitfi");
+                                element.classList.remove("animate__animated","animate__rollIn");
+                                
+                            })
+                        },0)
                             
-                        })
-                    },0)
-                }
-
-                if(element.classList.contains("text3")){
-
-                    setTimeout(()=>{
-                        element.classList.add("animate__animated","animate__rotateInUpRight");
-                        element.addEventListener('animationend',()=>{
-                            // console.log("bitfi");
-                            element.classList.remove("animate__animated","animate__rotateInUpRight");
-                            
-                        })
-                    },0)
-                    
-                }
-                if(element.classList.contains("button3")){
-                    setTimeout(()=>{
-                        element.classList.add("animate__animated","animate__rotateIn");
-                        element.addEventListener('animationend',()=>{
-                            // console.log("bitfi");
-                            element.classList.remove("animate__animated","animate__rotateIn");
-                            
-                        })
-                    },0)
-                }
-
-
-                if(element.classList.contains("main1")){
-                    setTimeout(()=>{
-                        element.classList.add("animate__animated","animate__fadeInDown");
-                        element.addEventListener('animationend',()=>{
-                            // console.log("bitfi");
-                            element.classList.remove("animate__animated","animate__fadeInDown");
-                            
-                        })
-                    },0)
-                }
-
-                if(element.classList.contains("text1")){
-                    setTimeout(()=>{
-                        element.classList.add("animate__animated","animate__fadeInUp");
-                        element.addEventListener('animationend',()=>{
-                            // console.log("bitfi");
-                            element.classList.remove("animate__animated","animate__fadeInUp");
-                           
-                        })
-                    },0)
-                 }
-                 if(element.classList.contains("button1")){
-                    setTimeout(()=>{
-                        element.classList.add("animate__animated","animate__zoomIn");
-                        element.addEventListener('animationend',()=>{
-                            element.classList.remove("animate__animated","animate__zoomIn");
-                           
-                        })
-                    },0)
-                    //  console.log(element)
-                }
-
-                 
-                if(element.classList.contains("main2")){
-                    setTimeout(()=>{
-                        element.classList.add("animate__animated","animate__rollIn");
-                        element.addEventListener('animationend',()=>{
-                            // console.log("bitfi");
-                            element.classList.remove("animate__animated","animate__rollIn");
-                            
-                        })
-                    },0)
-                        
-                }
-                if(element.classList.contains("text2")){
-                    setTimeout(()=>{
-                        element.classList.add("animate__animated","animate__lightSpeedInRight");
-                        element.addEventListener('animationend',()=>{
-                            // console.log("bitfi");
-                            element.classList.remove("animate__animated","animate__lightSpeedInRight");
-                           
-                        })
-                    },0)
-                }
-
-                if(element.classList.contains("button2")){
-                    setTimeout(()=>{
-                        element.classList.add("animate__animated","animate__zoomIn");
-                        element.addEventListener('animationend',()=>{
-                            // console.log("bitfi");
-                            element.classList.remove("animate__animated","animate__zoomIn");
-                            
-                        })
-                    },0)
-                }
-            })
-
+                    }
+                    if(element.classList.contains("text2")){
+                        setTimeout(()=>{
+                            element.classList.add("animate__animated","animate__lightSpeedInRight");
+                            element.addEventListener('animationend',()=>{
+                                // console.log("bitfi");
+                                element.classList.remove("animate__animated","animate__lightSpeedInRight");
+                               
+                            })
+                        },0)
+                    }
+    
+                    if(element.classList.contains("button2")){
+                        console.log(element)
+                        setTimeout(()=>{
+                            element.classList.add("animate__animated","animate__zoomIn");
+                            element.addEventListener('animationend',()=>{
+                                // console.log("bitfi");
+                                element.classList.remove("animate__animated","animate__zoomIn");
+                                
+                            })
+                        },0)
+                    }
+                })
+    
+            }
         }
-    }
-  });
+      });
+},2000)
+
 
 
 // second swiper

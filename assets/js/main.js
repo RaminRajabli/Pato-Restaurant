@@ -120,7 +120,7 @@ if (min < 10) {
 } 
 let time = now.getHours() + ":" + min;
 
-document.getElementById("time_").setAttribute("value", time);
+// document.getElementById("time_").setAttribute("value", time);
 
 // customers
 
@@ -131,3 +131,151 @@ rating.forEach((element)=>{
     element.innerHTML += `<i class="fas fa-star checked"></i>`
   }
 })
+
+
+// gallery
+Fancybox.bind('[data-fancybox="gallery"]', {
+  dragToClose: false,
+  Toolbar: false,
+  closeButton: "top",
+
+  Image: {
+    zoom: false,
+  },
+
+  on: {
+    initCarousel: (fancybox) => {
+      const slide = fancybox.Carousel.slides[fancybox.Carousel.page];
+
+      fancybox.$container.style.setProperty(
+        "--bg-image",
+        `url("${slide.$thumb.src}")`
+        );
+      },
+    "Carousel.change": (fancybox, carousel, to, from) => {
+      const slide = carousel.slides[to];
+
+      fancybox.$container.style.setProperty(
+        "--bg-image",
+        `url("${slide.$thumb.src}")`
+      );
+    },
+  },
+});
+
+Fancybox.bind('[data-fancybox="menu_gallery"]', {
+  dragToClose: false,
+  Toolbar: false,
+  closeButton: "top",
+
+  Image: {
+    zoom: false,
+  },
+
+  on: {
+    initCarousel: (fancybox) => {
+      const slide = fancybox.Carousel.slides[fancybox.Carousel.page];
+
+      fancybox.$container.style.setProperty(
+        "--bg-image",
+        `url("${slide.$thumb.src}")`
+      );
+    },
+    "Carousel.change": (fancybox, carousel, to, from) => {
+      const slide = carousel.slides[to];
+
+      fancybox.$container.style.setProperty(
+        "--bg-image",
+        `url("${slide.$thumb.src}")`
+      );
+    },
+  },
+});
+
+
+// first slider api
+let slides_container = document.querySelector(".entrance_slide");
+let slides_list = [];
+let slides_ = [];
+console.log(slides_)
+
+axios.get("https://ramin-final-default-rtdb.firebaseio.com/home/entrance.json").then(
+  response => response.data
+).then(data=>{
+  for(let key in data){
+    slides_list.unshift(data[key]);
+  }
+  console.log(slides_list)
+}).catch(error => {throw error})
+
+
+
+let i = 0;
+setTimeout(()=>{
+  for(let element of slides_list){
+    
+    if(i<3){
+      let slide_ = document.createElement("div");
+      slide_.classList.add("swiper-slide", "slide");
+      console.log(slide_);
+      if(i==0){
+        slide_.classList.add("first");
+        slide_.innerHTML = `
+        <div class="content">
+        <h1 class="main1 animate__fadeInDown animate__animated ">
+           ${element.entering}
+        </h1>
+        <p class="text1 animate__animated animate__fadeInUp">
+           ${element.r_name}
+        </p>
+        <a class="button1 animate__animated animate__zoomIn" href="./assets/pages/Menu/menu.html">LOOK MENU</a>
+        </div>
+        <figure>
+            <img src="${element.background}" alt="">
+        </figure>
+        `
+        // console.log(i)
+      }else if(i==1){
+        slide_.classList.add("second");
+        slide_.innerHTML = `
+        <div class="content">
+           <h1 class="main2 animate__animated animate__rollIn">
+               ${element.entering}</h1>
+           <p class="text2 animate__animated animate__lightSpeedInRight">
+             ${element.r_name}
+          </p>
+          <a class="button2 animate__animated animate__zoomIn" href="./assets/pages/About/about.html">LOOK MENU</a>
+        </div>
+        <figure>
+              <img src="${element.background}" alt="">
+        </figure>
+        `
+      }else{
+        slide_.classList.add("third");
+        slide_.innerHTML = `
+        <div class="content">
+        <h1 class="main3 animate__animated animate__rotateInDownLeft"> ${element.entering}</h1>
+           <p class="text3 animate__animated animate__rotateInUpRight">
+           ${element.r_name}
+           </p>
+          <a class="button3 animate__animated animate__rotateIn" href="./assets/pages/About/about.html">LOOK MENU</a>
+        </div>
+        <figure>
+        <img src="${element.background}" alt="">
+        </figure> 
+        `
+      }
+  
+      slides_.unshift(slide_);
+      // console.log(slides_);
+    }
+    i++
+  }
+  
+  
+  slides_.forEach((item)=>{
+    // console.log(item);
+    slides_container.prepend(item);
+    console.log(slides_container)
+  })
+},2000)

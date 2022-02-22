@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet"  href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="stylesheet" href="./comment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.css">
+    <title>Pato Restaurant</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+
+            <!-- Dropdown Menu -->
+            <div class="dropdown">
+                <div class="underlay">
+                </div>
+
+                <div class="dropdown-menu">
+                    <div class="close-icon">
+                        <button class="close-menu">
+                            <i class="fas fa-close fa-lg"></i>
+                        </button>
+                    </div>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">MENU</a></li>
+                        <li><a href="#">GALlERY</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">CONTACT</a></li>   
+                    </ul>
+
+                    <div class="reservation">
+                        <a href="#">RESERVATION</a>
+                    </div>
+
+                    <h3>Gallery</h3>
+                    <div class="menu_gallery flex flex-wrap gap-5 justify-center max-w-5xl mx-auto px-6">
+                        <a data-fancybox="menu_gallery" href="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
+                            <img class="rounded"  src="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
+                        </a>
+
+                        <a data-fancybox="menu_gallery" href="/assets/images/Home_Page/Discover/card1.webp">
+                            <img class="rounded"  src="/assets/images/Home_Page/Discover/card1.webp" alt="">
+                        </a>
+
+                        <a data-fancybox="menu_gallery" href="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
+                            <img class="rounded"  src="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
+                        </a>
+
+                        <a data-fancybox="menu_gallery" href="/assets/images/Home_Page/Discover/card1.webp">
+                            <img class="rounded"  src="/assets/images/Home_Page/Discover/card1.webp" alt="">
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- Dropdown Menu -->
+
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#">
+                    <img  id = "logo"  src="/assets/images/logo/logo.webp" alt="logo">
+                </a>
+            </div>
+            <!-- Logo -->
+
+            <!-- Menu of navigation bar -->
+            <div class="navbar">
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">MENU</a></li>
+                        <li><a href="#">RESERVATION</a></li>
+                        <li><a href="#">GALlERY</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">CONTACT</a></li>   
+                    </ul>
+                </div>
+                <!-- Social Media -->
+                <div class="social">
+                    <ul>
+                        <li><a href="#">
+                            <i class="fa fa-instagram"></i>
+                        </a></li>
+                        <li><a href="#">
+                            <i class="fa fa-facebook-f m-l-21"></i>
+                        </a></li>
+                        <li><a href="#">
+                            <i class="fa fa-twitter m-l-21"></i>
+                        </a></li>
+                    </ul>
+                </div>
+                <!-- Social Media -->
+    
+                <!-- Menu Bars Icon -->
+                <div class="menu_bars">
+                    <button class="menu-bar">
+                    </button>
+                </div>
+                <!-- Menu Bars Icon -->
+            </div>
+            <!-- Menu of navigation bar -->
+
+        </div>
+    </header>
+    <!-- End Of Header -->
+
+    <!-- Main Entrance Section -->
+    <section id="entrance">
+        <div class="container">
+            <h1>
+               Blog
+            </h1>
+        </div>
+    </section>
+    <!-- End of Main Entrance Section -->
+
+    <!-- Blog -->
+    <section class="blog">
+        <div class="blog-upper">
+            <div class="container">
+                <a href="/index.html">Home</a>
+                <span>/</span>
+                <a href="../blog.html">Blog</a>
+                <span>/</span>
+                <h5>COOKING RECIPE DELICIOUS</h5>
+            </div>
+        </div>
+
+        <div class="blog-lower">
+            <div class="container">
+                <div class="container-left">
+                    
+
+                    <div class="leaving_comment">
+                        <form action="">
+                            <h4>Leave A comment</h4>
+                            <p>Your email address will not be published. Required fields are marked *</p>
+                            <textarea name="comment" placeholder="Comment..." id="" cols="30" rows="10"></textarea>
+                            <div class="inputs">
+                                <input type="text" name="name" placeholder="Name *" required>
+                                <input type="email" name="email" placeholder="Email *" required>
+                                <input type="text" name="website" placeholder="Website" id="">
+                            </div>
+
+                            <button>Post a comment</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="container-right">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search" name="search">
+                        <button>
+                            <i class="fa fa-search blog_search_box"></i>
+                        </button>
+                    </div>
+                    <div class="categories">
+                        <h5>categories</h5>
+                        <ul>
+                              <li><a href="#">
+                                  Cooking Recipe
+                              </a></li>
+                              <li><a href="#">
+                                  Delicious Food
+                              </a></li>
+                              <li><a href="#">
+                                  Event Design
+                              </a></li>
+                              <li><a href="#">
+                                  Restaurant Place
+                              </a></li>
+                              <li><a href="#">
+                                  Wordpress
+                              </a></li>
+                        </ul>
+                    </div>
+                    <div class="popular">
+                        <h5>Most Popular</h5>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="popular_pic">
+                                        <img src="/assets/images/Blog/popular1.webp" alt="">
+                                    </div>
+                                    <div class="popular_content">
+                                        <p>
+                                            Best Places for Wine                                            
+                                        </p>
+                                        <span>
+                                            3 days ago
+                                        </span>
+                                    </div>
+                                </a>
+
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="popular_pic">
+                                        <img src="/assets/images/Blog/popular1.webp" alt="">
+                                    </div>
+                                    <div class="popular_content">
+                                        <p>
+                                            Best Places for Wine                                            
+                                        </p>
+                                        <span>
+                                            3 days ago
+                                        </span>
+                                    </div>
+                                </a>
+
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="popular_pic">
+                                        <img src="/assets/images/Blog/popular1.webp" alt="">
+                                    </div>
+                                    <div class="popular_content">
+                                        <p>
+                                            Best Places for Wine                                            
+                                        </p>
+                                        <span>
+                                            3 days ago
+                                        </span>
+                                    </div>
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="archive">
+                        <h5>Archive</h5>
+                        <ul>
+                            <li>
+                                <a href="#">July 2018</a>
+                                <span>(9)</span>
+                            </li>
+
+                            <li>
+                                <a href="#">June 2018</a>
+                                <span>(9)</span>
+                            </li>
+
+                            <li>
+                                <a href="#">May 2018</a>
+                                <span>(9)</span>
+                            </li>
+
+                            <li>
+                                <a href="#">April 2018</a>
+                                <span>(9)</span>
+                            </li>
+
+                            <li>
+                                <a href="#">March 2018</a>
+                                <span>(9)</span>
+                            </li>
+
+                            <li>
+                                <a href="#">February 2018</a>
+                                <span>(9)</span>
+                            </li>
+
+                            <li>
+                                <a href="#">January 2018</a>
+                                <span>(9)</span>
+                            </li>
+
+                            <li>
+                                <a href="#">December 2018</a>
+                                <span>(9)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="upper">
+            <div class="container">
+                <div class="footer_part footer_part1">
+                    <div class="footer_contact">
+                        <h3>
+                            Contact us
+                        </h3>
+                        <ul>
+                            <li>
+                                <ul class="contact_element">
+                                    <li>
+                                        <i class=" fa fa-map-marker"></i>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            8th floor, 379 Hudson St, New York, NY 10018
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="contact_element">
+                                    <li>
+                                        <i class="fa fa-phone"></i>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            (+1) 96 716 6879
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="contact_element">
+                                    <li>
+                                        <i class="fa fa-envelope"></i>
+                                    </li>
+                                    <li>
+                                        <a href="mailto: contact@site.com"">
+                                            <p>
+                                                contact@site.com
+                                            </p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_times">
+                        <h3>
+                            Opening Times
+                        </h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    09:30 AM – 11:00 PM
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Every Day
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_part footer_part2">
+                    <h3>
+                        Latest Twitter
+                    </h3>
+                    <ul>
+                        <li>
+                            <div class="footer_twitter footer_twitter1">
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-twitter m-l-21"></i>
+                                    </li>
+                                    <li>
+                                        <a href="#">colorlib</a>
+                                    </li>
+                                </ul>
+                                <p>
+                                    Activello is a good option. It has a slider built into that displays the featured image in the slider.
+                                    <a href="#"> https://buff.ly/2zaSfAQ</a>
+                                </p>
+                                <span class="footer_date">27 dekabr</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="footer_twitter ">
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-twitter m-l-21"></i>
+                                    </li>
+                                    <li>
+                                        <a href="#">colorlib</a>
+                                    </li>
+                                </ul>
+                                <p>
+                                    Activello is a good option. It has a slider built into that displays the featured image in the slider.
+                                    <a href="#"> https://buff.ly/2zaSfAQ</a>
+                                </p>
+                                <span class="footer_date">27 dekabr</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_part footer_part3">
+                    <h3>
+                        Gallery
+                    </h3>
+                    <div class="footer_gallery flex flex-wrap gap-5 justify-center max-w-5xl mx-auto px-6">
+                        <a data-fancybox="gallery" href="/assets/images/Home_Page/Menu/Dinner.webp">
+                            <img class="rounded"  src="/assets/images/Home_Page/Menu/Dinner.webp" alt="">
+                        </a>
+
+                        <a data-fancybox="gallery" href="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
+                            <img class="rounded"  src="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
+                        </a>
+
+                        <a data-fancybox="gallery" href="/assets/images/header_slider/1.jpg">
+                            <img class="rounded"  src="/assets/images/header_slider/1.jpg" alt="">
+                        </a>
+
+                        <a data-fancybox="gallery" href="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
+                            <img class="rounded"  src="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
+                        </a>
+
+                        <a data-fancybox="gallery" href="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
+                            <img class="rounded"  src="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lower">
+            <div class="container">
+                  <!-- Social Media -->
+                  <div class="social">
+                    <ul>
+                        <li><a href="#">
+                            <i class="fa fa-instagram"></i>
+                        </a></li>
+                        <li><a href="#">
+                            <i class="fab fa-facebook-f m-l-21"></i>
+                        </a></li>
+                        <li><a href="#">
+                            <i class="fa fa-twitter m-l-21"></i>
+                        </a></li>
+                    </ul>
+                </div>
+                <!-- Social Media -->
+                <!-- Copyright -->
+                <div class="copyright">
+                    <span>@ 2017 Colorlib.</span>
+                    <a href="#">Get The Theme</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Of Footer -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://kit.fontawesome.com/7626b8551c.js" crossorigin="anonymous"></script>
+    <script src="/assets/js/card.js"></script>
+    <script src="/assets/js/common.js"></script>
+</body>

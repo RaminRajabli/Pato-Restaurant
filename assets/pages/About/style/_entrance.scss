@@ -1,0 +1,189 @@
+#entrance{
+    min-height: 545px;
+    width: 100%;
+    position: relative;
+    background-image: url("/assets/images/Blog/entrance.webp");
+    background-repeat: no-repeat;
+    // background-size: cover;
+    background-position: center 0;
+    background-size: cover;
+    @include center;
+    .container{
+         h1{
+            font-family: Poppins;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 1.2;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            word-spacing: 6px;
+            text-align: center;
+        }
+         
+    }
+}
+
+.our_story{
+    width: 100%;
+    background-image: url("/assets/images/Home_Page/Welcomingentrance/background.webp");
+    @include center;
+    .container{
+        max-width: 930px;
+        padding: 105px 30px 120px 30px;
+        @include space-between;
+       
+        &--content{
+            width: 100%;
+            @include center;
+            flex-direction: column;
+            span{
+                font-family: Courgette;
+                font-size: 30px;
+                line-height: 1.2;
+                color: #d61c22;
+                text-align: center;
+            }
+            h2{
+                font-family: Poppins;
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 1.2;
+                color: #222;
+                text-transform: uppercase;
+                letter-spacing: 6px;
+                text-align: center;
+            }
+            p{
+                font-family: Montserrat;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 1.7;
+                color: #666;
+                margin: 0;
+                text-align: center;
+                margin: 30px 0;
+
+            }
+            a{
+                font-family: Montserrat;
+                font-weight: 400;
+                font-size: 12px;
+                color: #222;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                transition: 0.5s;
+                &:hover{
+                    color: #d61c22;
+                }
+                i{
+                    padding-left: 9px;
+                    font-size: 12px;
+                }
+            }
+        }
+       
+    }
+}
+
+.information{
+    width: 100%;
+    background-image: url("/assets/images/Home_Page/Welcomingentrance/background.webp");
+    @include center;
+    .main_container{
+        @include center;
+        flex-direction: column;
+        .container{
+            max-width: 1200px;
+            padding: 105px 30px 120px 30px;
+            @include space-between;
+           
+            &--content{
+                width: 50%;
+                @include center;
+                flex-direction: column;
+                span{
+                    font-family: Courgette;
+                    font-size: 30px;
+                    line-height: 1.2;
+                    color: #d61c22;
+                    text-align: center;
+                }
+                h2{
+                    font-family: Poppins;
+                    font-weight: 700;
+                    font-size: 50px;
+                    line-height: 1.2;
+                    color: #222;
+                    text-transform: uppercase;
+                    letter-spacing: 6px;
+                    text-align: center;
+                }
+                p{
+                    font-family: Montserrat;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 1.7;
+                    color: #666;
+                    margin: 0;
+                    text-align: center;
+                    margin: 30px 0;
+    
+                }
+                a{
+                    font-family: Montserrat;
+                    font-weight: 400;
+                    font-size: 12px;
+                    color: #222;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    transition: 0.5s;
+                    &:hover{
+                        color: #d61c22;
+                    }
+                    i{
+                        padding-left: 9px;
+                        font-size: 12px;
+                    }
+                }
+            }
+            &--picture{
+                width: 45%;
+                max-width: 390px;
+                border-radius: 10px;
+                &:hover{
+                    img{
+                        transform: scale(1.1);
+                    }
+                }
+                overflow: hidden;
+                figure{
+                    width: 100%;
+                    img{
+                        transition: 0.5s;
+                        border-radius: 10px;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.about_parallax{
+    @include center;
+    width: 100%;
+    padding-top: 225px;
+    padding-bottom: 250px;
+    flex-direction: column;
+    
+    background-image: url("/assets/images/Home_Page/Comments/our\ vider.webp");
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

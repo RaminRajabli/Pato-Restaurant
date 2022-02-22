@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet"  href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.css">
     <title>Pato Restaurant</title>
@@ -46,44 +46,23 @@
                     </div>
 
                     <h3>Gallery</h3>
-                    <div class="menu_gallery">
-                        <a href="#">
-                            <img src="./assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
+                    <div class="menu_gallery flex flex-wrap gap-5 justify-center max-w-5xl mx-auto px-6">
+                        <a data-fancybox="menu_gallery" href="./assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
+                            <img class="rounded"  src="./assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
                         </a>
 
-                        <a href="#">
-                            <img src="./assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
+                        <a data-fancybox="menu_gallery" href="./assets/images/Home_Page/Discover/card1.webp">
+                            <img class="rounded"  src="./assets/images/Home_Page/Discover/card1.webp" alt="">
                         </a>
 
-                        <a href="#">
-                            <img src="./assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
+                        <a data-fancybox="menu_gallery" href="./assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
+                            <img class="rounded"  src="./assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
                         </a>
 
-                        <a href="#">
-                            <img src="./assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
+                        <a data-fancybox="menu_gallery" href="./assets/images/Home_Page/Discover/card1.webp">
+                            <img class="rounded"  src="./assets/images/Home_Page/Discover/card1.webp" alt="">
                         </a>
 
-                        <a href="#">
-                            <img src="./assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
-                        </a>
-                        
-                        <a href="#">
-                            <img src="./assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
-                        </a>
-
-                        <a href="#">
-                            <img src="./assets/images/Home_Page/Discover/card1.webp" alt="">
-                        </a>
-
-                        <a href="#">
-                            <img src="./assets/images/Home_Page/Discover/card1.webp" alt="">
-                        </a>
-
-                        <a href="#">
-                            <img src="./assets/images/Home_Page/Discover/card1.webp" alt="">
-                        </a>
-
-                        
                     </div>
                 </div>
 
@@ -104,7 +83,7 @@
                 <div class="menu">
                     <ul>
                         <li><a href="#">HOME</a></li>
-                        <li><a href="#">MENU</a></li>
+                        <li><a href="./assets/pages/Menu/menu.html">MENU</a></li>
                         <li><a href="#">RESERVATION</a></li>
                         <li><a href="#">GALlERY</a></li>
                         <li><a href="#">ABOUT</a></li>
@@ -145,10 +124,10 @@
     <section id="entrance">
         <div class="container">
             <!-- slider -->
-            <div class="swiper mySwiper slider ">
-                <div class="swiper-wrapper slides ">
+            <div class="swiper mySwiper slider  ">
+                <div class="swiper-wrapper  slides entrance_slide">
                     <!-- images  -->
-                    <div class="swiper-slide slide first">
+                    <!-- <div class="swiper-slide slide  first">
                         <div class="content">
                             <h1 class="main1 animate__fadeInDown animate__animated ">Welcome to</h1>
                             <p class="text1 animate__animated animate__fadeInUp">
@@ -159,9 +138,9 @@
                         <figure>
                             <img src="./assets/images/header_slider/1.jpg" alt="">
                         </figure>
-                    </div>
+                    </div> -->
 
-                    <div class="swiper-slide slide second">
+                    <!-- <div class="swiper-slide slide  second">
                         <div class="content">
                             <h1 class="main2 animate__animated animate__rollIn">Welcome to</h1>
                             <p class="text2 animate__animated animate__lightSpeedInRight">
@@ -172,9 +151,9 @@
                         <figure>
                             <img src="./assets/images/header_slider/2.jpg" alt="">
                         </figure>
-                    </div>
+                    </div> -->
 
-                    <div class="swiper-slide slide third">
+                    <!-- <div class="swiper-slide slide third">
                         <div class="content">
                             <h1 class="main3 animate__animated animate__rotateInDownLeft">Welcome to</h1>
                             <p class="text3 animate__animated animate__rotateInUpRight">
@@ -185,7 +164,7 @@
                         <figure>
                             <img src="./assets/images/header_slider/3.jpg" alt="">
                         </figure>
-                    </div>
+                    </div> -->
                     <!-- images -->
 
                     <!-- navigation arrows -->
@@ -958,54 +937,28 @@
                     <h3>
                         Gallery
                     </h3>
-                    <div class="footer_gallery">
-                        <a href="#">
-                            <img src="./assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
+                    <div class="footer_gallery flex flex-wrap gap-5 justify-center max-w-5xl mx-auto px-6">
+                        <a data-fancybox="gallery" href="./assets/images/Home_Page/Menu/Dinner.webp">
+                            <img class="rounded"  src="./assets/images/Home_Page/Menu/Dinner.webp" alt="">
                         </a>
 
-                        <a href="#">
-                            <img src="./assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
+                        <a data-fancybox="gallery" href="./assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
+                            <img class="rounded"  src="./assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
                         </a>
 
-                        <a href="#">
-                            <img src="./assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
+                        <a data-fancybox="gallery" href="./assets/images/header_slider/1.jpg">
+                            <img class="rounded"  src="./assets/images/header_slider/1.jpg" alt="">
                         </a>
 
-                        <a href="#">
-                            <img src="./assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
+                        <a data-fancybox="gallery" href="./assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
+                            <img class="rounded"  src="./assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
                         </a>
 
-                        <a href="#">
-                            <img src="./assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
-                        </a>
-                        
-                        <a href="#">
-                            <img src="./assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
+                        <a data-fancybox="gallery" href="./assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
+                            <img class="rounded"  src="./assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
                         </a>
 
-                        <a href="#">
-                            <img src="./assets/images/Home_Page/Discover/card1.webp" alt="">
-                        </a>
-
-                        <a href="#">
-                            <img src="./assets/images/Home_Page/Discover/card1.webp" alt="">
-                        </a>
-
-                        <a href="#">
-                            <img src="./assets/images/Home_Page/Discover/card1.webp" alt="">
-                        </a>
-                        
-                        <a href="#">
-                            <img src="./assets/images/Home_Page/Discover/card1.webp" alt="">
-                        </a>
-
-                        <a href="#">
-                            <img src="./assets/images/Home_Page/Discover/card1.webp" alt="">
-                        </a>
-
-                        <a href="#">
-                            <img src="./assets/images/Home_Page/Discover/card1.webp" alt="">
-                        </a>
+                       
                     </div>
                 </div>
             </div>
@@ -1038,6 +991,8 @@
     </footer>
     <!-- End Of Footer -->
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/7626b8551c.js" crossorigin="anonymous"></script>
     <script src="./assets/js/main.js"></script>
