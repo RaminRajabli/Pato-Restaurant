@@ -22,5 +22,11 @@
         }
          
     }
+
+    @media screen and(max-width:468px) {
+        h1{
+            font-size: 30px!important;
+        }
+    }
 }
 

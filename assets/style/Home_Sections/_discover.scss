@@ -41,6 +41,7 @@
 
         &--cards{
             max-width: 1200px;
+            width: 100%;
             @include space-between;
             padding: 0 30px;
             margin-top: 77px;
@@ -91,8 +92,8 @@
                     font-size: 15px;
                     line-height: 1.7;
                     color: #666;
-                    margin-bottom: 20px;
-                    height: 47px;
+                    margin-bottom: 10px;
+                    height: 45px;
                 }
                 a{
                     font-family: Montserrat;
@@ -111,6 +112,47 @@
                     }
                 }
                 
+            }
+        }
+    }
+}
+
+
+@media screen and(max-width:768px){
+    .discover{
+        &-container{
+            &--cards{
+                justify-content: center!important;
+                flex-direction: column;
+                margin-bottom: 70px;
+                &--card{
+                    width: 100%;
+                    margin: 30px 0;
+                    .pic{
+                        height: 330px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:468px){
+    .discover{
+        &-container{
+            &--cards{
+                padding-right: 10px;
+                padding-left: 10px;
+                
+                &--card{
+                    width: 100%;
+                    margin: 30px 0;
+                    .pic{
+                        height: 230px;
+
+                    }
+                }
             }
         }
     }

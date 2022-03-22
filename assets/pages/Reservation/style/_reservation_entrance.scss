@@ -24,7 +24,7 @@
     }
 }
 
-.reservation{
+.reservation_{
     width: 100%;
     background-image: url("/assets/images/Home_Page/Welcomingentrance/background.webp");
     @include center;
@@ -39,7 +39,7 @@
             flex-direction: column;
 
             padding-bottom:30px;
-            .reservation-content--button{
+            .reservation_-content--button{
                 cursor: pointer;
                 @include center;
                     width: 150px;
@@ -195,7 +195,7 @@
 
 
 @media screen and(max-width:768px){
-    .reservation{
+    .reservation_{
         &-container{
             &--content{
                 .input{
@@ -224,6 +224,9 @@
 }
 
 @media screen and(max-width:468px){
+    h1{
+        font-size: 30px!important;
+    }
     .blog{
         @include center;
         flex-direction: column;

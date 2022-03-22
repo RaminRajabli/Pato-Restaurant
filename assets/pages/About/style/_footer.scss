@@ -197,12 +197,14 @@ footer{
     }
 }
 
+
 .section_email{
     width: 100%;
     background-image: url("/assets/images/Home_Page/Welcomingentrance/background.webp");
     @include center;
     .container{
         max-width: 1200px;
+        width: 100%;
         padding: 50px 30px 50px 30px;
         @include space-between;
         p{
@@ -268,6 +270,43 @@ footer{
                     &:hover{
                         background-color: #d41b22;
                     }
+        }
+    }
+}
+
+@media screen and(max-width:768px) {
+    footer{
+        .upper{
+            .container{
+                flex-wrap: wrap;
+                .footer_part{
+                    width: 48%!important;
+                }
+            }
+        }
+    }
+    .section_email{
+        .container{
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and(max-width:468px) {
+    footer{
+        .upper{
+            .container{
+                flex-wrap: wrap;
+                .footer_part{
+                    width: 100%!important;
+                }
+            }
+        }
+        .lower{
+            height: 90px;
+            .container{
+                flex-wrap: wrap;
+            }
         }
     }
 }

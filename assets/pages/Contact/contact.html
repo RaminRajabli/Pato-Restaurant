@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./contact.css">
+    <link rel="icon" type="image/png" href="/assets/images/icon.webp">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -16,288 +17,395 @@
     <title>Pato Restaurant</title>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-
-            <!-- Dropdown Menu -->
-            <div class="dropdown">
-                <div class="underlay">
-                </div>
-
-                <div class="dropdown-menu">
-                    <div class="close-icon">
-                        <button class="close-menu">
-                            <i class="fas fa-close fa-lg"></i>
-                        </button>
-                    </div>
-                    <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">MENU</a></li>
-                        <li><a href="#">GALlERY</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">CONTACT</a></li>   
-                    </ul>
-
-                    <div class="reservation">
-                        <a href="#">RESERVATION</a>
-                    </div>
-
-                    <h3>Gallery</h3>
-                    <div class="menu_gallery flex flex-wrap gap-5 justify-center max-w-5xl mx-auto px-6">
-                        <a data-fancybox="menu_gallery" href="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
-                            <img class="rounded"  src="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
-                        </a>
-
-                        <a data-fancybox="menu_gallery" href="/assets/images/Home_Page/Discover/card1.webp">
-                            <img class="rounded"  src="/assets/images/Home_Page/Discover/card1.webp" alt="">
-                        </a>
-
-                        <a data-fancybox="menu_gallery" href="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
-                            <img class="rounded"  src="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
-                        </a>
-
-                        <a data-fancybox="menu_gallery" href="/assets/images/Home_Page/Discover/card1.webp">
-                            <img class="rounded"  src="/assets/images/Home_Page/Discover/card1.webp" alt="">
-                        </a>
-
-                    </div>
-                </div>
-
-            </div>
-            <!-- Dropdown Menu -->
-
-
-            <!-- Logo -->
-            <div class="logo">
-                <a href="#">
-                    <img  id = "logo"  src="/assets/images/logo/logo.webp" alt="logo">
-                </a>
-            </div>
-            <!-- Logo -->
-
-            <!-- Menu of navigation bar -->
-            <div class="navbar">
-                <div class="menu">
-                    <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">MENU</a></li>
-                        <li><a href="#">RESERVATION</a></li>
-                        <li><a href="#">GALlERY</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">CONTACT</a></li>   
-                    </ul>
-                </div>
-                <!-- Social Media -->
-                <div class="social">
-                    <ul>
-                        <li><a href="#">
-                            <i class="fa fa-instagram"></i>
-                        </a></li>
-                        <li><a href="#">
-                            <i class="fa fa-facebook-f m-l-21"></i>
-                        </a></li>
-                        <li><a href="#">
-                            <i class="fa fa-twitter m-l-21"></i>
-                        </a></li>
-                    </ul>
-                </div>
-                <!-- Social Media -->
-    
-                <!-- Menu Bars Icon -->
-                <div class="menu_bars">
-                    <button class="menu-bar">
-                    </button>
-                </div>
-                <!-- Menu Bars Icon -->
-            </div>
-            <!-- Menu of navigation bar -->
-
-        </div>
-    </header>
-    <!-- End Of Header -->
-
-    <!-- Main Entrance Section -->
-    <section id="entrance">
-        <div class="container">
-            <h1>
-               Contact
-            </h1>
+    <!-- Loader -->
+    <section class="loader">
+        <div class="clock">
+            <div class="minutes"></div>
+            <div class="hours"></div>
         </div>
     </section>
-    <!-- End of Main Entrance Section -->
-
-    <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=baku+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/truck-gps/">vehicle tracking</a></iframe></div>
-   
-
-    <!-- Footer -->
-    <footer>
-        <div class="upper">
-            <div class="container">
-                <div class="footer_part footer_part1">
-                    <div class="footer_contact">
-                        <h3>
-                            Contact us
-                        </h3>
-                        <ul>
-                            <li>
-                                <ul class="contact_element">
-                                    <li>
-                                        <i class=" fa fa-map-marker"></i>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            8th floor, 379 Hudson St, New York, NY 10018
-                                        </p>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="contact_element">
-                                    <li>
-                                        <i class="fa fa-phone"></i>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            (+1) 96 716 6879
-                                        </p>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="contact_element">
-                                    <li>
-                                        <i class="fa fa-envelope"></i>
-                                    </li>
-                                    <li>
-                                        <a href="mailto: contact@site.com"">
-                                            <p>
-                                                contact@site.com
-                                            </p>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer_times">
-                        <h3>
-                            Opening Times
-                        </h3>
-                        <ul>
-                            <li>
-                                <p>
-                                    09:30 AM – 11:00 PM
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    Every Day
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer_part footer_part2">
-                    <h3>
-                        Latest Twitter
-                    </h3>
-                    <ul>
-                        <li>
-                            <div class="footer_twitter footer_twitter1">
-                                <ul>
-                                    <li>
-                                        <i class="fa fa-twitter m-l-21"></i>
-                                    </li>
-                                    <li>
-                                        <a href="#">colorlib</a>
-                                    </li>
-                                </ul>
-                                <p>
-                                    Activello is a good option. It has a slider built into that displays the featured image in the slider.
-                                    <a href="#"> https://buff.ly/2zaSfAQ</a>
-                                </p>
-                                <span class="footer_date">27 dekabr</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="footer_twitter ">
-                                <ul>
-                                    <li>
-                                        <i class="fa fa-twitter m-l-21"></i>
-                                    </li>
-                                    <li>
-                                        <a href="#">colorlib</a>
-                                    </li>
-                                </ul>
-                                <p>
-                                    Activello is a good option. It has a slider built into that displays the featured image in the slider.
-                                    <a href="#"> https://buff.ly/2zaSfAQ</a>
-                                </p>
-                                <span class="footer_date">27 dekabr</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer_part footer_part3">
-                    <h3>
-                        Gallery
-                    </h3>
-                    <div class="footer_gallery flex flex-wrap gap-5 justify-center max-w-5xl mx-auto px-6">
-                        <a data-fancybox="gallery" href="/assets/images/Home_Page/Menu/Dinner.webp">
-                            <img class="rounded"  src="/assets/images/Home_Page/Menu/Dinner.webp" alt="">
-                        </a>
-
-                        <a data-fancybox="gallery" href="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
-                            <img class="rounded"  src="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
-                        </a>
-
-                        <a data-fancybox="gallery" href="/assets/images/header_slider/1.jpg">
-                            <img class="rounded"  src="/assets/images/header_slider/1.jpg" alt="">
-                        </a>
-
-                        <a data-fancybox="gallery" href="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
-                            <img class="rounded"  src="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
-                        </a>
-
-                        <a data-fancybox="gallery" href="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
-                            <img class="rounded"  src="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="lower">
-            <div class="container">
-                  <!-- Social Media -->
-                  <div class="social">
-                    <ul>
-                        <li><a href="#">
-                            <i class="fa fa-instagram"></i>
-                        </a></li>
-                        <li><a href="#">
-                            <i class="fab fa-facebook-f m-l-21"></i>
-                        </a></li>
-                        <li><a href="#">
-                            <i class="fa fa-twitter m-l-21"></i>
-                        </a></li>
-                    </ul>
-                </div>
-                <!-- Social Media -->
-                <!-- Copyright -->
-                <div class="copyright">
-                    <span>@ 2017 Colorlib.</span>
-                    <a href="#">Get The Theme</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End Of Footer -->
+    <!-- Loader -->
 
     
+    <section class="site-content">
+        
+            <!-- Header -->
+            <header>
+                <div class="container">
+        
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown">
+                        <div class="underlay">
+                        </div>
+        
+                        <div class="dropdown-menu">
+                            <div class="close-icon">
+                                <button class="close-menu">
+                                    <i class="fas fa-close fa-lg"></i>
+                                </button>
+                            </div>
+                            <ul>
+                                <li><a href="/index.html">HOME</a></li>
+                                <li><a href="/assets/pages/Menu/menu.html">MENU</a></li>
+                                <li><a href="/assets/pages/Gallery/gallery.html">GALlERY</a></li>
+                                <li><a href="/assets/pages/About/about.html">ABOUT</a></li>
+                                <li><a href="/assets/pages/Blog/blog.html">BLOG</a></li>
+                                <li><a href="#">CONTACT</a></li>   
+                            </ul>
+        
+                            <div class="reservation">
+                                <a href="/assets/pages/Reservation/reservation.html">RESERVATION</a>
+                            </div>
+        
+                            <h3>Gallery</h3>
+                            <div class="menu_gallery flex flex-wrap gap-5 justify-center max-w-5xl mx-auto px-6">
+                                <a data-fancybox="menu_gallery" href="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
+                                    <img class="rounded"  src="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
+                                </a>
+        
+                                <a data-fancybox="menu_gallery" href="/assets/images/Home_Page/Discover/card1.webp">
+                                    <img class="rounded"  src="/assets/images/Home_Page/Discover/card1.webp" alt="">
+                                </a>
+        
+                                <a data-fancybox="menu_gallery" href="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
+                                    <img class="rounded"  src="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
+                                </a>
+        
+                                <a data-fancybox="menu_gallery" href="/assets/images/Home_Page/Discover/card1.webp">
+                                    <img class="rounded"  src="/assets/images/Home_Page/Discover/card1.webp" alt="">
+                                </a>
+        
+                            </div>
+                        </div>
+        
+                    </div>
+                    <!-- Dropdown Menu -->
+        
+        
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="#">
+                            <img  id = "logo"  src="/assets/images/logo/logo.webp" alt="logo">
+                        </a>
+                    </div>
+                    <!-- Logo -->
+        
+                    <!-- Menu of navigation bar -->
+                    <div class="navbar">
+                        <div class="menu">
+                            <ul>
+                                <li><a href="/index.html">HOME</a></li>
+                                <li><a href="/assets/pages/Menu/menu.html">MENU</a></li>
+                                <li><a href="/assets/pages/Reservation/reservation.html">RESERVATION</a></li>
+                                <li><a href="/assets/pages/Gallery/gallery.html">GALlERY</a></li>
+                                <li><a href="/assets/pages/About/about.html">ABOUT</a></li>
+                                <li><a href="/assets/pages/Blog/blog.html">BLOG</a></li>
+                                <li><a href="#">CONTACT</a></li>   
+                            </ul>
+                        </div>
+                        <!-- Social Media -->
+                        <div class="social">
+                            <ul>
+                                <li><a href="http://instagram.com" target="_blank" >
+                                    <i class="fa fa-instagram"></i>
+                                </a></li>
+                                <li><a href="http://facebook.com" target="_blank">
+                                    <i class="fab fa-facebook-f m-l-21"></i>
+                                </a></li>
+                                <li><a href="http://twitter.com" target="_blank">
+                                    <i class="fa fa-twitter m-l-21"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Social Media -->
+            
+                        <!-- Menu Bars Icon -->
+                        <div class="menu_bars">
+                            <button class="menu-bar">
+                            </button>
+                        </div>
+                        <!-- Menu Bars Icon -->
+                    </div>
+                    <!-- Menu of navigation bar -->
+        
+                </div>
+            </header>
+            <!-- End Of Header -->
+        
+            <!-- Main Entrance Section -->
+            <section id="entrance">
+                <div class="container">
+                    <h1>
+                       Contact
+                    </h1>
+                </div>
+            </section>
+            <!-- End of Main Entrance Section -->
+        
+            <section class="location">
+                <div class="container">
+                    <div class="container-map">
+                        <div  class="frame" ><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=baku+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/truck-gps/">vehicle tracking</a></iframe></div>
+                    </div>
+        
+                    <div class="container-message">
+                        <form action="">
+                            <h4>Send as u a message</h4>
+                            <div class="inputs">
+                                <div>
+                                    <label for="name_">Name</label>
+                                    <input type="text" id="name_" name="name" placeholder="Name" required>
+                                </div>
+        
+                                <div>
+                                    <label for="email_">Email</label>
+                                    <input type="email" id="email_" name="email" placeholder="Email" required>
+                                </div>
+        
+                                <div>
+                                    <label for="phone_">Phone</label>
+                                    <input type="text" name="phone_" placeholder="Phone" id="phone_" required>
+                                </div>
+                            </div>
+        
+                            <div class="message_">
+                                <label for="message_">Message</label>
+                                <textarea id="message_" name="message_" placeholder="Message" id="" cols="30" rows="10"></textarea>
+                            </div>
+        
+                            <button>Submit</button>
+                        </form>
+                    </div>
+        
+                    <div class="container-contact">
+                        <div class="location_">
+                            <ul class="contact_element">
+                                <li>
+                                    <i class=" fa fa-map-marker"></i>
+                                </li>
+                                <li>
+                                    <h5>Location</h5>
+                                    <p>
+                                        8th floor, 379 Hudson St, New York, NY 10018
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="number_">
+                            <ul class="contact_element">
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                </li>
+                                <li>
+                                    <h5>Call Us</h5>
+                                    <p>
+                                        (+1) 96 716 6879
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="hours_">
+                            <ul class="contact_element">
+                                <li>
+                                    <i class="fa fa-clock"></i>
+                                </li>
+                                <li>
+                                    <h5>
+                                        Opening Times
+                                    </h5>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                09:30 AM – 11:00 PM
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                Every Day
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+        
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+           
+        
+            
+             <!-- Footer -->
+             <footer>
+                <div class="upper">
+                    <div class="container">
+                        <div class="footer_part footer_part1">
+                            <div class="footer_contact">
+                                <h3>
+                                    Contact us
+                                </h3>
+                                <ul>
+                                    <li>
+                                        <ul class="contact_element">
+                                            <li>
+                                                <i class=" fa fa-map-marker"></i>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    8th floor, 379 Hudson St, New York, NY 10018
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="contact_element">
+                                            <li>
+                                                <i class="fa fa-phone"></i>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    (+1) 96 716 6879
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="contact_element">
+                                            <li>
+                                                <i class="fa fa-envelope"></i>
+                                            </li>
+                                            <li>
+                                                <a href="mailto: contact@site.com"">
+                                                    <p>
+                                                        contact@site.com
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer_times">
+                                <h3>
+                                    Opening Times
+                                </h3>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            09:30 AM – 11:00 PM
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Every Day
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer_part footer_part2">
+                            <h3>
+                                Latest Twitter
+                            </h3>
+                            <ul>
+                                <li>
+                                    <div class="footer_twitter footer_twitter1">
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-twitter m-l-21"></i>
+                                            </li>
+                                            <li>
+                                                <a href="#">colorlib</a>
+                                            </li>
+                                        </ul>
+                                        <p>
+                                            Activello is a good option. It has a slider built into that displays the featured image in the slider.
+                                            <a href=" https://buff.ly/2zaSfAQ" target="_blank"> https://buff.ly/2zaSfAQ</a>
+                                        </p>
+                                        <span class="footer_date">27 dekabr</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="footer_twitter ">
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-twitter m-l-21"></i>
+                                            </li>
+                                            <li>
+                                                <a href="#">colorlib</a>
+                                            </li>
+                                        </ul>
+                                        <p>
+                                            Activello is a good option. It has a slider built into that displays the featured image in the slider.
+                                            <a href="#"> https://buff.ly/2zaSfAQ</a>
+                                        </p>
+                                        <span class="footer_date">27 dekabr</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_part footer_part3">
+                            <h3>
+                                Gallery
+                            </h3>
+                            <div class="footer_gallery flex flex-wrap gap-5 justify-center max-w-5xl mx-auto px-6">
+                                <a data-fancybox="gallery" href="/assets/images/Home_Page/Menu/Dinner.webp">
+                                    <img class="rounded"  src="/assets/images/Home_Page/Menu/Dinner.webp" alt="">
+                                </a>
+        
+                                <a data-fancybox="gallery" href="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
+                                    <img class="rounded"  src="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
+                                </a>
+        
+                                <a data-fancybox="gallery" href="/assets/images/header_slider/1.jpg">
+                                    <img class="rounded"  src="/assets/images/header_slider/1.jpg" alt="">
+                                </a>
+        
+                                <a data-fancybox="gallery" href="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
+                                    <img class="rounded"  src="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
+                                </a>
+        
+                                <a data-fancybox="gallery" href="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
+                                    <img class="rounded"  src="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
+                                </a>
+        
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="lower">
+                    <div class="container">
+                          <!-- Social Media -->
+                          <div class="social">
+                            <ul>
+                                <li><a href="http://instagram.com" target="_blank" >
+                                    <i class="fa fa-instagram"></i>
+                                </a></li>
+                                <li><a href="http://facebook.com" target="_blank">
+                                    <i class="fab fa-facebook-f m-l-21"></i>
+                                </a></li>
+                                <li><a href="http://twitter.com" target="_blank">
+                                    <i class="fa fa-twitter m-l-21"></i>
+                                </a></li>
+                            </ul>
+                        </div>
+                        <!-- Social Media -->
+                        <!-- Copyright -->
+                        <div class="copyright">
+                            <span>@ 2017 Colorlib.</span>
+                            <a href="#">Get The Theme</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- End Of Footer -->
+
+    </section>
+    
+    <script src="/assets/js/loader.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="https://kit.fontawesome.com/7626b8551c.js" crossorigin="anonymous"></script>
     <script src="/assets/js/common.js"></script>

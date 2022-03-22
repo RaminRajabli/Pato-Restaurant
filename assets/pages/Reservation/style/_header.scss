@@ -255,3 +255,33 @@ header{
         }
     }
 }
+
+@media screen and(max-width:1024px){
+    header{
+        .navbar{
+            .menu{
+                width: 0!important;
+                display: none;
+            }
+        }
+    }
+
+}
+
+
+@media screen and(max-width:468px){
+    header{
+        .social{
+            display: none;
+        }
+        .container{
+            padding: 0 10px;
+        }
+        .dropdown{
+            .dropdown-menu{
+                width: 100%;
+            }
+        }
+    }
+
+}

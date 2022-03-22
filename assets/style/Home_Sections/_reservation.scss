@@ -152,6 +152,7 @@
     @include center;
     .container{
         max-width: 1200px;
+        width: 100%;
         padding: 50px 30px 50px 30px;
         @include space-between;
         p{
@@ -219,4 +220,55 @@
                     }
         }
     }
+}
+
+@media screen and(max-width:1024px){
+    .reservation_{
+        &-container{
+            flex-direction: column;
+            &--content{
+                width: 100%;
+            }
+
+            &--picture{
+                width: 70%;
+                margin-top: 50px!important;
+            }
+        }
+    }
+
+}
+
+@media screen and(max-width:768px){
+    .section_email{
+        .container{
+            flex-direction: column;
+        }
+    }
+
+}
+
+@media screen and(max-width:468px){
+    .reservation_{
+        &-container{
+            flex-direction: column;
+            padding-left: 10px;
+            padding-right: 10px;
+            .information{
+                flex-direction: column;
+                .input{
+                    width: 100%;
+                }
+            }
+            &--content{
+                width: 100%;
+            }
+
+            &--picture{
+                width: 100%;
+                margin-top: 50px!important;
+            }
+        }
+    }
+
 }

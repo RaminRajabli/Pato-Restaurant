@@ -288,6 +288,7 @@
     @include center;
     .container{
         max-width: 1200px;
+        width: 100%;
         padding: 50px 30px 50px 30px;
         @include space-between;
         p{
@@ -353,6 +354,87 @@
                     &:hover{
                         background-color: #d41b22;
                     }
+        }
+    }
+}
+
+
+@media screen and(max-width:768px){
+    #entrance{
+        h1{
+            font-size: 30px!important;
+        }
+    }
+    .section_email{
+        .container{
+            flex-direction: column;
+        }
+    }
+    .menu_list{
+        .container{
+            flex-direction: column;
+            .parts{
+                width: 100%;
+            }
+        }
+    }
+
+    .menu_lunch{
+        .container{
+            &-cards{
+               
+                flex-direction: column!important;
+                &--card{
+                    width: 100%!important;
+                }
+            }
+        }
+    }
+    .menu_dinner{
+        .container{
+            &-cards{
+                
+                flex-direction: column!important;
+                &--card{
+                    width: 100%!important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:468px){
+    .menu_list{
+        .container{
+            padding-left: 10px;
+            padding-right: 10px;
+            flex-direction: column;
+            .parts{
+                width: 100%;
+            }
+        }
+    }
+
+    .menu_lunch{
+        .container{
+            &-cards{
+                padding: 0 10px;
+                flex-direction: column!important;
+                &--card{
+                    width: 100%!important;
+                }
+            }
+        }
+    }
+    .menu_dinner{
+        .container{
+            &-cards{
+                padding: 0 10px;
+                flex-direction: column!important;
+                &--card{
+                    width: 100%!important;
+                }
+            }
         }
     }
 }

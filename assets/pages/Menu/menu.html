@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./menu.css">
+    <link rel="icon" type="image/png" href="/assets/images/icon.webp">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -16,820 +17,836 @@
     <title>Pato Restaurant</title>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
+    <!-- Loader -->
+    <section class="loader">
+        <div class="clock">
+            <div class="minutes"></div>
+            <div class="hours"></div>
+        </div>
+    </section>
+    <!-- Loader -->
 
-            <!-- Dropdown Menu -->
-            <div class="dropdown">
-                <div class="underlay">
+    
+    <section class="site-content">
+        <!-- Header -->
+        <header>
+            <div class="container">
+    
+                <!-- Dropdown Menu -->
+                <div class="dropdown">
+                    <div class="underlay">
+                    </div>
+    
+                    <div class="dropdown-menu">
+                        <div class="close-icon">
+                            <button class="close-menu">
+                                <i class="fas fa-close fa-lg"></i>
+                            </button>
+                        </div>
+                        <ul>
+                            <li><a href="/index.html">HOME</a></li>
+                            <li><a href="#">MENU</a></li>
+                            <li><a href="/assets/pages/Gallery/gallery.html">GALlERY</a></li>
+                            <li><a href="/assets/pages/About/about.html">ABOUT</a></li>
+                            <li><a href="/assets/pages/Blog/blog.html">BLOG</a></li>
+                            <li><a href="/assets/pages/Contact/contact.html">CONTACT</a></li>   
+                        </ul>
+    
+                        <div class="reservation">
+                            <a href="/assets/pages/Reservation/reservation.html">RESERVATION</a>
+                        </div>
+    
+                        <h3>Gallery</h3>
+                        <div class="menu_gallery flex flex-wrap gap-5 justify-center max-w-5xl mx-auto px-6">
+                            <a data-fancybox="menu_gallery" href="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
+                                <img class="rounded"  src="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
+                            </a>
+    
+                            <a data-fancybox="menu_gallery" href="/assets/images/Home_Page/Discover/card1.webp">
+                                <img class="rounded"  src="/assets/images/Home_Page/Discover/card1.webp" alt="">
+                            </a>
+    
+                            <a data-fancybox="menu_gallery" href="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
+                                <img class="rounded"  src="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
+                            </a>
+    
+                            <a data-fancybox="menu_gallery" href="/assets/images/Home_Page/Discover/card1.webp">
+                                <img class="rounded"  src="/assets/images/Home_Page/Discover/card1.webp" alt="">
+                            </a>
+    
+                        </div>
+                    </div>
+    
                 </div>
-
-                <div class="dropdown-menu">
-                    <div class="close-icon">
-                        <button class="close-menu">
-                            <i class="fas fa-close fa-lg"></i>
+                <!-- Dropdown Menu -->
+    
+    
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="#">
+                        <img  id = "logo"  src="/assets/images/logo/logo.webp" alt="logo">
+                    </a>
+                </div>
+                <!-- Logo -->
+    
+                <!-- Menu of navigation bar -->
+                <div class="navbar">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="/index.html">HOME</a></li>
+                            <li><a href="#">MENU</a></li>
+                            <li><a href="/assets/pages/Reservation/reservation.html">RESERVATION</a></li>
+                            <li><a href="/assets/pages/Gallery/gallery.html">GALlERY</a></li>
+                            <li><a href="/assets/pages/About/about.html">ABOUT</a></li>
+                            <li><a href="/assets/pages/Blog/blog.html">BLOG</a></li>
+                            <li><a href="/assets/pages/Contact/contact.html">CONTACT</a></li>   
+                        </ul>
+                    </div>
+                    <!-- Social Media -->
+                    <div class="social">
+                        <ul>
+                            <li><a href="http://instagram.com" target="_blank" >
+                                <i class="fa fa-instagram"></i>
+                            </a></li>
+                            <li><a href="http://facebook.com" target="_blank">
+                                <i class="fab fa-facebook-f m-l-21"></i>
+                            </a></li>
+                            <li><a href="http://twitter.com" target="_blank">
+                                <i class="fa fa-twitter m-l-21"></i>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <!-- Social Media -->
+        
+                    <!-- Menu Bars Icon -->
+                    <div class="menu_bars">
+                        <button class="menu-bar">
                         </button>
                     </div>
-                    <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">MENU</a></li>
-                        <li><a href="#">GALlERY</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">CONTACT</a></li>   
-                    </ul>
-
-                    <div class="reservation">
-                        <a href="#">RESERVATION</a>
-                    </div>
-
-                    <h3>Gallery</h3>
-                    <div class="menu_gallery flex flex-wrap gap-5 justify-center max-w-5xl mx-auto px-6">
-                        <a data-fancybox="menu_gallery" href="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
-                            <img class="rounded"  src="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
-                        </a>
-
-                        <a data-fancybox="menu_gallery" href="/assets/images/Home_Page/Discover/card1.webp">
-                            <img class="rounded"  src="/assets/images/Home_Page/Discover/card1.webp" alt="">
-                        </a>
-
-                        <a data-fancybox="menu_gallery" href="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
-                            <img class="rounded"  src="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
-                        </a>
-
-                        <a data-fancybox="menu_gallery" href="/assets/images/Home_Page/Discover/card1.webp">
-                            <img class="rounded"  src="/assets/images/Home_Page/Discover/card1.webp" alt="">
-                        </a>
-
-                    </div>
+                    <!-- Menu Bars Icon -->
                 </div>
-
-            </div>
-            <!-- Dropdown Menu -->
-
-
-            <!-- Logo -->
-            <div class="logo">
-                <a href="#">
-                    <img  id = "logo"  src="/assets/images/logo/logo.webp" alt="logo">
-                </a>
-            </div>
-            <!-- Logo -->
-
-            <!-- Menu of navigation bar -->
-            <div class="navbar">
-                <div class="menu">
-                    <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">MENU</a></li>
-                        <li><a href="#">RESERVATION</a></li>
-                        <li><a href="#">GALlERY</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">CONTACT</a></li>   
-                    </ul>
-                </div>
-                <!-- Social Media -->
-                <div class="social">
-                    <ul>
-                        <li><a href="#">
-                            <i class="fa fa-instagram"></i>
-                        </a></li>
-                        <li><a href="#">
-                            <i class="fa fa-facebook-f m-l-21"></i>
-                        </a></li>
-                        <li><a href="#">
-                            <i class="fa fa-twitter m-l-21"></i>
-                        </a></li>
-                    </ul>
-                </div>
-                <!-- Social Media -->
+                <!-- Menu of navigation bar -->
     
-                <!-- Menu Bars Icon -->
-                <div class="menu_bars">
-                    <button class="menu-bar">
-                    </button>
-                </div>
-                <!-- Menu Bars Icon -->
             </div>
-            <!-- Menu of navigation bar -->
-
-        </div>
-    </header>
-    <!-- End Of Header -->
-
-    <!-- Main Entrance Section -->
-    <section id="entrance">
-        <div class="container">
-            <h1>
-               Pato MENU
-            </h1>
-        </div>
-    </section>
-    <!-- End of Main Entrance Section -->
-
-    <!-- Price Menu Section -->
-    <section class="menu_list">
-        <div class="container">
-            <div class="parts container-starters">
-                <h3>
-                    Starters
-                </h3>
-                <div class="container-starters--list">
-                    <ul>
-                        <li>
-                            <div class="container-starters--list--meal">
-                                <a class = "meal-name">
-                                    PINE NUT SBRISALONA
-                                </a>
-                                <p class="description">
-                                    Sed fermentum eros vitae eros
-                                </p>
-                                <span class="price">
-                                    29.7
-                                </span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="container-starters--list--meal">
-                                <a class = "meal-name">
-                                    PINE NUT SBRISALONA
-                                </a>
-                                <p class="description">
-                                    Sed fermentum eros vitae eros
-                                </p>
-                                <span class="price">
-                                    29.7
-                                </span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="container-starters--list--meal">
-                                <a class = "meal-name">
-                                    PINE NUT SBRISALONA
-                                </a>
-                                <p class="description">
-                                    Sed fermentum eros vitae eros
-                                </p>
-                                <span class="price">
-                                    29.7
-                                </span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="container-starters--list--meal">
-                                <a class = "meal-name">
-                                    PINE NUT SBRISALONA
-                                </a>
-                                <p class="description">
-                                    Sed fermentum eros vitae eros
-                                </p>
-                                <span class="price">
-                                    29.7
-                                </span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="container-starters--list--meal">
-                                <a class = "meal-name">
-                                    PINE NUT SBRISALONA
-                                </a>
-                                <p class="description">
-                                    Sed fermentum eros vitae eros
-                                </p>
-                                <span class="price">
-                                    29.7
-                                </span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="parts container-main">
-                <h3>
-                    Main
-                </h3>
-                <div class="container-main--list">
-                    <ul>
-                        <li>
-                            <div class="container-main--list--meal">
-                                <a class = "meal-name">
-                                    PINE NUT SBRISALONA
-                                </a>
-                                <p class="description">
-                                    Sed fermentum eros vitae eros
-                                </p>
-                                <span class="price">
-                                    29.7
-                                </span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="container-main--list--meal">
-                                <a class = "meal-name">
-                                    PINE NUT SBRISALONA
-                                </a>
-                                <p class="description">
-                                    Sed fermentum eros vitae eros
-                                </p>
-                                <span class="price">
-                                    29.7
-                                </span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="container-main--list--meal">
-                                <a class = "meal-name">
-                                    PINE NUT SBRISALONA
-                                </a>
-                                <p class="description">
-                                    Sed fermentum eros vitae eros
-                                </p>
-                                <span class="price">
-                                    29.7
-                                </span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="container-main--list--meal">
-                                <a class = "meal-name">
-                                    PINE NUT SBRISALONA
-                                </a>
-                                <p class="description">
-                                    Sed fermentum eros vitae eros
-                                </p>
-                                <span class="price">
-                                    29.7
-                                </span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="container-main--list--meal">
-                                <a class = "meal-name">
-                                    PINE NUT SBRISALONA
-                                </a>
-                                <p class="description">
-                                    Sed fermentum eros vitae eros
-                                </p>
-                                <span class="price">
-                                    29.7
-                                </span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="parts container-drinks">
-                <h3>
-                    Drinks
-                </h3>
-                <div class="container-drinks--list">
-                    <ul>
-                        <li>
-                            <div class="container-drinks--list--meal">
-                                <a class = "meal-name">
-                                    PINE NUT SBRISALONA
-                                </a>
-                                <p class="description">
-                                    Sed fermentum eros vitae eros
-                                </p>
-                                <span class="price">
-                                    29.7
-                                </span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="container-drinks--list--meal">
-                                <a class = "meal-name">
-                                    PINE NUT SBRISALONA
-                                </a>
-                                <p class="description">
-                                    Sed fermentum eros vitae eros
-                                </p>
-                                <span class="price">
-                                    29.7
-                                </span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="container-drinks--list--meal">
-                                <a class = "meal-name">
-                                    PINE NUT SBRISALONA
-                                </a>
-                                <p class="description">
-                                    Sed fermentum eros vitae eros
-                                </p>
-                                <span class="price">
-                                    29.7
-                                </span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="container-drinks--list--meal">
-                                <a class = "meal-name">
-                                    PINE NUT SBRISALONA
-                                </a>
-                                <p class="description">
-                                    Sed fermentum eros vitae eros
-                                </p>
-                                <span class="price">
-                                    29.7
-                                </span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            
-            <div class="parts container-dessert">
-                <h3>
-                    Dessert
-                </h3>
-                <div class="container-dessert--list">
-                    <ul>
-                        <li>
-                            <div class="container-dessert--list--meal">
-                                <a class = "meal-name">
-                                    PINE
-                                </a>
-                                <p class="description">
-                                    Sed fermentum eros vitae eros
-                                </p>
-                                <span class="price">
-                                    29.7
-                                </span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="container-dessert--list--meal">
-                                <a class = "meal-name">
-                                    PINE NUT SBRISALONA
-                                </a>
-                                <p class="description">
-                                    Sed fermentum eros vitae eros
-                                </p>
-                                <span class="price">
-                                    29.7
-                                </span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="container-dessert--list--meal">
-                                <a class = "meal-name">
-                                    PINE NUT SBRISALONA
-                                </a>
-                                <p class="description">
-                                    Sed fermentum eros vitae eros
-                                </p>
-                                <span class="price">
-                                    29.7
-                                </span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="container-dessert--list--meal">
-                                <a class = "meal-name">
-                                    PINE NUT SBRISALONA
-                                </a>
-                                <p class="description">
-                                    Sed fermentum eros vitae eros
-                                </p>
-                                <span class="price">
-                                    29.7
-                                </span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="container-dessert--list--meal">
-                                <a class = "meal-name">
-                                    PINE NUT SBRISALONA
-                                </a>
-                                <p class="description">
-                                    Sed fermentum eros vitae eros
-                                </p>
-                                <span class="price">
-                                    29.7
-                                </span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="container-dessert--list--meal">
-                                <a class = "meal-name">
-                                    PINE NUT SBRISALONA
-                                </a>
-                                <p class="description">
-                                    Sed fermentum eros vitae eros
-                                </p>
-                                <span class="price">
-                                    29.7
-                                </span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="container-dessert--list--meal">
-                                <a class = "meal-name">
-                                    PINE NUT SBRISALONA
-                                </a>
-                                <p class="description">
-                                    Sed fermentum eros vitae eros
-                                </p>
-                                <span class="price">
-                                    29.7
-                                </span>
-                            </div>
-                        </li>
-                        
-                    </ul>
-                </div>
-            </div>
-            
-        </div>
-    </section>
-    <!-- Price Menu Section -->
-
-    <!-- Menu Lunch -->
-    <section class="menu_lunch">
-        <div class="container">
-            <div class="container-intro">
-                <h2>
-                    LUNCH
-                </h2>
-            </div>
-            <div class="container-cards">
-                <div class="container-cards--card">
-                    <div class="pic">
-                        <a href="#">
-                            <figure>
-                                <img src="/assets/images/MENU/lunch1.webp" alt="">
-                            </figure>
-                        </a>
-                    </div>  
-                    <div class="content">
-                        <a href="#">
-                            <h3>
-                                Sed varius
-                            </h3>
-                        </a>
-                        <p>
-                            Aenean pharetra tortor dui in pellentesque
-                        </p>
-                        <span>$29.7</span>
-                    </div>
-                </div>
-
-                <div class="container-cards--card">
-                    <div class="pic">
-                        <a href="#">
-                            <figure>
-                                <img src="/assets/images/MENU/lunch1.webp" alt="">
-                            </figure>
-                        </a>
-                    </div>  
-                    <div class="content">
-                        <a href="#">
-                            <h3>
-                                Sed varius
-                            </h3>
-                        </a>
-                        <p>
-                            Aenean pharetra tortor dui in pellentesque
-                        </p>
-                        <span>$29.7</span>
-                    </div>
-                </div>
-
-                <div class="container-cards--card">
-                    <div class="pic">
-                        <a href="#">
-                            <figure>
-                                <img src="/assets/images/MENU/lunch1.webp" alt="">
-                            </figure>
-                        </a>
-                    </div>  
-                    <div class="content">
-                        <a href="#">
-                            <h3>
-                                Sed varius
-                            </h3>
-                        </a>
-                        <p>
-                            Aenean pharetra tortor dui in pellentesque
-                        </p>
-                        <span>$29.7</span>
-                    </div>
-                </div>
-
-                <div class="container-cards--card">
-                    <div class="pic">
-                        <a href="#">
-                            <figure>
-                                <img src="/assets/images/MENU/lunch1.webp" alt="">
-                            </figure>
-                        </a>
-                    </div>  
-                    <div class="content">
-                        <a href="#">
-                            <h3>
-                                Sed varius
-                            </h3>
-                        </a>
-                        <p>
-                            Aenean pharetra tortor dui in pellentesque
-                        </p>
-                        <span>$29.7</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- End of menu lunch -->
-
-    <!-- Dinner section -->
-    <section class="menu_dinner">
-        <div class="container">
-            <div class="container-intro">
-                <h2>
-                    DINNER
-                </h2>
-            </div>
-            <div class="container-cards">
-                <div class="container-cards--card">
-                    <div class="pic">
-                        <a href="#">
-                            <figure>
-                                <img src="/assets/images/MENU/lunch1.webp" alt="">
-                            </figure>
-                        </a>
-                    </div>  
-                    <div class="content">
-                        <a href="#">
-                            <h3>
-                                Sed varius
-                            </h3>
-                        </a>
-                        <p>
-                            Aenean pharetra tortor dui in pellentesque
-                        </p>
-                        <span>$29.7</span>
-                    </div>
-                </div>
-
-                <div class="container-cards--card">
-                    <div class="pic">
-                        <a href="#">
-                            <figure>
-                                <img src="/assets/images/MENU/lunch1.webp" alt="">
-                            </figure>
-                        </a>
-                    </div>  
-                    <div class="content">
-                        <a href="#">
-                            <h3>
-                                Sed varius
-                            </h3>
-                        </a>
-                        <p>
-                            Aenean pharetra tortor dui in pellentesque
-                        </p>
-                        <span>$29.7</span>
-                    </div>
-                </div>
-
-                <div class="container-cards--card">
-                    <div class="pic">
-                        <a href="#">
-                            <figure>
-                                <img src="/assets/images/MENU/lunch1.webp" alt="">
-                            </figure>
-                        </a>
-                    </div>  
-                    <div class="content">
-                        <a href="#">
-                            <h3>
-                                Sed varius
-                            </h3>
-                        </a>
-                        <p>
-                            Aenean pharetra tortor dui in pellentesque
-                        </p>
-                        <span>$29.7</span>
-                    </div>
-                </div>
-
-                <div class="container-cards--card">
-                    <div class="pic">
-                        <a href="#">
-                            <figure>
-                                <img src="/assets/images/MENU/lunch1.webp" alt="">
-                            </figure>
-                        </a>
-                    </div>  
-                    <div class="content">
-                        <a href="#">
-                            <h3>
-                                Sed varius
-                            </h3>
-                        </a>
-                        <p>
-                            Aenean pharetra tortor dui in pellentesque
-                        </p>
-                        <span>$29.7</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- End of dinner  -->
-
-     <!-- Email Section -->
-     <div class="section_email">
-        <div class="container">
-            <p>
-                SPECIALS SIGN UP
-            </p>
-            <div class="input">
-                <i class="fa fa-envelope"></i>
-                <input type="text" placeholder="Email Adress">
-            </div>
-            <button>
-                Sign Up
-            </button>
-        </div>
-    </div>
-    <!-- End Of email section -->
-
-    <!-- Footer -->
-    <footer>
-        <div class="upper">
+        </header>
+        <!-- End Of Header -->
+    
+        <!-- Main Entrance Section -->
+        <section id="entrance">
             <div class="container">
-                <div class="footer_part footer_part1">
-                    <div class="footer_contact">
-                        <h3>
-                            Contact us
-                        </h3>
+                <h1>
+                   Pato MENU
+                </h1>
+            </div>
+        </section>
+        <!-- End of Main Entrance Section -->
+    
+        <!-- Price Menu Section -->
+        <section class="menu_list">
+            <div class="container">
+                <div class="parts container-starters">
+                    <h3>
+                        Starters
+                    </h3>
+                    <div class="container-starters--list">
                         <ul>
                             <li>
-                                <ul class="contact_element">
-                                    <li>
-                                        <i class=" fa fa-map-marker"></i>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            8th floor, 379 Hudson St, New York, NY 10018
-                                        </p>
-                                    </li>
-                                </ul>
+                                <div class="container-starters--list--meal">
+                                    <a class = "meal-name">
+                                        PINE NUT SBRISALONA
+                                    </a>
+                                    <p class="description">
+                                        Sed fermentum eros vitae eros
+                                    </p>
+                                    <span class="price">
+                                        $29.7
+                                    </span>
+                                </div>
                             </li>
                             <li>
-                                <ul class="contact_element">
-                                    <li>
-                                        <i class="fa fa-phone"></i>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            (+1) 96 716 6879
-                                        </p>
-                                    </li>
-                                </ul>
+                                <div class="container-starters--list--meal">
+                                    <a class = "meal-name">
+                                        PINE NUT SBRISALONA
+                                    </a>
+                                    <p class="description">
+                                        Sed fermentum eros vitae eros
+                                    </p>
+                                    <span class="price">
+                                        $29.7
+                                    </span>
+                                </div>
                             </li>
                             <li>
-                                <ul class="contact_element">
-                                    <li>
-                                        <i class="fa fa-envelope"></i>
-                                    </li>
-                                    <li>
-                                        <a href="mailto: contact@site.com"">
+                                <div class="container-starters--list--meal">
+                                    <a class = "meal-name">
+                                        PINE NUT SBRISALONA
+                                    </a>
+                                    <p class="description">
+                                        Sed fermentum eros vitae eros
+                                    </p>
+                                    <span class="price">
+                                        $29.7
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="container-starters--list--meal">
+                                    <a class = "meal-name">
+                                        PINE NUT SBRISALONA
+                                    </a>
+                                    <p class="description">
+                                        Sed fermentum eros vitae eros
+                                    </p>
+                                    <span class="price">
+                                        $29.7
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="container-starters--list--meal">
+                                    <a class = "meal-name">
+                                        PINE NUT SBRISALONA
+                                    </a>
+                                    <p class="description">
+                                        Sed fermentum eros vitae eros
+                                    </p>
+                                    <span class="price">
+                                        $29.7
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="parts container-main">
+                    <h3>
+                        Main
+                    </h3>
+                    <div class="container-main--list">
+                        <ul>
+                            <li>
+                                <div class="container-main--list--meal">
+                                    <a class = "meal-name">
+                                        PINE NUT SBRISALONA
+                                    </a>
+                                    <p class="description">
+                                        Sed fermentum eros vitae eros
+                                    </p>
+                                    <span class="price">
+                                        $29.7
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="container-main--list--meal">
+                                    <a class = "meal-name">
+                                        PINE NUT SBRISALONA
+                                    </a>
+                                    <p class="description">
+                                        Sed fermentum eros vitae eros
+                                    </p>
+                                    <span class="price">
+                                        $29.7
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="container-main--list--meal">
+                                    <a class = "meal-name">
+                                        PINE NUT SBRISALONA
+                                    </a>
+                                    <p class="description">
+                                        Sed fermentum eros vitae eros
+                                    </p>
+                                    <span class="price">
+                                        $29.7
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="container-main--list--meal">
+                                    <a class = "meal-name">
+                                        PINE NUT SBRISALONA
+                                    </a>
+                                    <p class="description">
+                                        Sed fermentum eros vitae eros
+                                    </p>
+                                    <span class="price">
+                                        $29.7
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="container-main--list--meal">
+                                    <a class = "meal-name">
+                                        PINE NUT SBRISALONA
+                                    </a>
+                                    <p class="description">
+                                        Sed fermentum eros vitae eros
+                                    </p>
+                                    <span class="price">
+                                        $29.7
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="parts container-drinks">
+                    <h3>
+                        Drinks
+                    </h3>
+                    <div class="container-drinks--list">
+                        <ul>
+                            <li>
+                                <div class="container-drinks--list--meal">
+                                    <a class = "meal-name">
+                                        PINE NUT SBRISALONA
+                                    </a>
+                                    <p class="description">
+                                        Sed fermentum eros vitae eros
+                                    </p>
+                                    <span class="price">
+                                        $29.7
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="container-drinks--list--meal">
+                                    <a class = "meal-name">
+                                        PINE NUT SBRISALONA
+                                    </a>
+                                    <p class="description">
+                                        Sed fermentum eros vitae eros
+                                    </p>
+                                    <span class="price">
+                                        $29.7
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="container-drinks--list--meal">
+                                    <a class = "meal-name">
+                                        PINE NUT SBRISALONA
+                                    </a>
+                                    <p class="description">
+                                        Sed fermentum eros vitae eros
+                                    </p>
+                                    <span class="price">
+                                        $29.7
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="container-drinks--list--meal">
+                                    <a class = "meal-name">
+                                        PINE NUT SBRISALONA
+                                    </a>
+                                    <p class="description">
+                                        Sed fermentum eros vitae eros
+                                    </p>
+                                    <span class="price">
+                                        $29.7
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                
+                <div class="parts container-dessert">
+                    <h3>
+                        Dessert
+                    </h3>
+                    <div class="container-dessert--list">
+                        <ul>
+                            <li>
+                                <div class="container-dessert--list--meal">
+                                    <a class = "meal-name">
+                                        PINE
+                                    </a>
+                                    <p class="description">
+                                        Sed fermentum eros vitae eros
+                                    </p>
+                                    <span class="price">
+                                        29.7
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="container-dessert--list--meal">
+                                    <a class = "meal-name">
+                                        PINE NUT SBRISALONA
+                                    </a>
+                                    <p class="description">
+                                        Sed fermentum eros vitae eros
+                                    </p>
+                                    <span class="price">
+                                        29.7
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="container-dessert--list--meal">
+                                    <a class = "meal-name">
+                                        PINE NUT SBRISALONA
+                                    </a>
+                                    <p class="description">
+                                        Sed fermentum eros vitae eros
+                                    </p>
+                                    <span class="price">
+                                        29.7
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="container-dessert--list--meal">
+                                    <a class = "meal-name">
+                                        PINE NUT SBRISALONA
+                                    </a>
+                                    <p class="description">
+                                        Sed fermentum eros vitae eros
+                                    </p>
+                                    <span class="price">
+                                        29.7
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="container-dessert--list--meal">
+                                    <a class = "meal-name">
+                                        PINE NUT SBRISALONA
+                                    </a>
+                                    <p class="description">
+                                        Sed fermentum eros vitae eros
+                                    </p>
+                                    <span class="price">
+                                        29.7
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="container-dessert--list--meal">
+                                    <a class = "meal-name">
+                                        PINE NUT SBRISALONA
+                                    </a>
+                                    <p class="description">
+                                        Sed fermentum eros vitae eros
+                                    </p>
+                                    <span class="price">
+                                        29.7
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="container-dessert--list--meal">
+                                    <a class = "meal-name">
+                                        PINE NUT SBRISALONA
+                                    </a>
+                                    <p class="description">
+                                        Sed fermentum eros vitae eros
+                                    </p>
+                                    <span class="price">
+                                        29.7
+                                    </span>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- Price Menu Section -->
+    
+        <!-- Menu Lunch -->
+        <section class="menu_lunch">
+            <div class="container">
+                <div class="container-intro">
+                    <h2>
+                        LUNCH
+                    </h2>
+                </div>
+                <div class="container-cards">
+                    <div class="container-cards--card">
+                        <div class="pic">
+                            <a href="#">
+                                <figure>
+                                    <img src="/assets/images/MENU/lunch1.webp" alt="">
+                                </figure>
+                            </a>
+                        </div>  
+                        <div class="content">
+                            <a href="#">
+                                <h3>
+                                    Sed varius
+                                </h3>
+                            </a>
+                            <p>
+                                Aenean pharetra tortor dui in pellentesque
+                            </p>
+                            <span>$29.7</span>
+                        </div>
+                    </div>
+    
+                    <div class="container-cards--card">
+                        <div class="pic">
+                            <a href="#">
+                                <figure>
+                                    <img src="/assets/images/MENU/lunch1.webp" alt="">
+                                </figure>
+                            </a>
+                        </div>  
+                        <div class="content">
+                            <a href="#">
+                                <h3>
+                                    Sed varius
+                                </h3>
+                            </a>
+                            <p>
+                                Aenean pharetra tortor dui in pellentesque
+                            </p>
+                            <span>$29.7</span>
+                        </div>
+                    </div>
+    
+                    <div class="container-cards--card">
+                        <div class="pic">
+                            <a href="#">
+                                <figure>
+                                    <img src="/assets/images/MENU/lunch1.webp" alt="">
+                                </figure>
+                            </a>
+                        </div>  
+                        <div class="content">
+                            <a href="#">
+                                <h3>
+                                    Sed varius
+                                </h3>
+                            </a>
+                            <p>
+                                Aenean pharetra tortor dui in pellentesque
+                            </p>
+                            <span>$29.7</span>
+                        </div>
+                    </div>
+    
+                    <div class="container-cards--card">
+                        <div class="pic">
+                            <a href="#">
+                                <figure>
+                                    <img src="/assets/images/MENU/lunch1.webp" alt="">
+                                </figure>
+                            </a>
+                        </div>  
+                        <div class="content">
+                            <a href="#">
+                                <h3>
+                                    Sed varius
+                                </h3>
+                            </a>
+                            <p>
+                                Aenean pharetra tortor dui in pellentesque
+                            </p>
+                            <span>$29.7</span>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+        <!-- End of menu lunch -->
+    
+        <!-- Dinner section -->
+        <section class="menu_dinner">
+            <div class="container">
+                <div class="container-intro">
+                    <h2>
+                        DINNER
+                    </h2>
+                </div>
+                <div class="container-cards">
+                    <div class="container-cards--card">
+                        <div class="pic">
+                            <a href="#">
+                                <figure>
+                                    <img src="/assets/images/MENU/lunch1.webp" alt="">
+                                </figure>
+                            </a>
+                        </div>  
+                        <div class="content">
+                            <a href="#">
+                                <h3>
+                                    Sed varius
+                                </h3>
+                            </a>
+                            <p>
+                                Aenean pharetra tortor dui in pellentesque
+                            </p>
+                            <span>$29.7</span>
+                        </div>
+                    </div>
+    
+                    <div class="container-cards--card">
+                        <div class="pic">
+                            <a href="#">
+                                <figure>
+                                    <img src="/assets/images/MENU/lunch1.webp" alt="">
+                                </figure>
+                            </a>
+                        </div>  
+                        <div class="content">
+                            <a href="#">
+                                <h3>
+                                    Sed varius
+                                </h3>
+                            </a>
+                            <p>
+                                Aenean pharetra tortor dui in pellentesque
+                            </p>
+                            <span>$29.7</span>
+                        </div>
+                    </div>
+    
+                    <div class="container-cards--card">
+                        <div class="pic">
+                            <a href="#">
+                                <figure>
+                                    <img src="/assets/images/MENU/lunch1.webp" alt="">
+                                </figure>
+                            </a>
+                        </div>  
+                        <div class="content">
+                            <a href="#">
+                                <h3>
+                                    Sed varius
+                                </h3>
+                            </a>
+                            <p>
+                                Aenean pharetra tortor dui in pellentesque
+                            </p>
+                            <span>$29.7</span>
+                        </div>
+                    </div>
+    
+                    <div class="container-cards--card">
+                        <div class="pic">
+                            <a href="#">
+                                <figure>
+                                    <img src="/assets/images/MENU/lunch1.webp" alt="">
+                                </figure>
+                            </a>
+                        </div>  
+                        <div class="content">
+                            <a href="#">
+                                <h3>
+                                    Sed varius
+                                </h3>
+                            </a>
+                            <p>
+                                Aenean pharetra tortor dui in pellentesque
+                            </p>
+                            <span>$29.7</span>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+        <!-- End of dinner  -->
+    
+         <!-- Email Section -->
+         <div class="section_email">
+            <div class="container">
+                <p>
+                    SPECIALS SIGN UP
+                </p>
+                <div class="input">
+                    <i class="fa fa-envelope"></i>
+                    <input type="text" placeholder="Email Adress">
+                </div>
+                <button>
+                    Sign Up
+                </button>
+            </div>
+        </div>
+        <!-- End Of email section -->
+    
+         <!-- Footer -->
+         <footer>
+            <div class="upper">
+                <div class="container">
+                    <div class="footer_part footer_part1">
+                        <div class="footer_contact">
+                            <h3>
+                                Contact us
+                            </h3>
+                            <ul>
+                                <li>
+                                    <ul class="contact_element">
+                                        <li>
+                                            <i class=" fa fa-map-marker"></i>
+                                        </li>
+                                        <li>
                                             <p>
-                                                contact@site.com
+                                                8th floor, 379 Hudson St, New York, NY 10018
                                             </p>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="contact_element">
+                                        <li>
+                                            <i class="fa fa-phone"></i>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                (+1) 96 716 6879
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="contact_element">
+                                        <li>
+                                            <i class="fa fa-envelope"></i>
+                                        </li>
+                                        <li>
+                                            <a href="mailto: contact@site.com"">
+                                                <p>
+                                                    contact@site.com
+                                                </p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_times">
+                            <h3>
+                                Opening Times
+                            </h3>
+                            <ul>
+                                <li>
+                                    <p>
+                                        09:30 AM – 11:00 PM
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Every Day
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="footer_times">
+                    <div class="footer_part footer_part2">
                         <h3>
-                            Opening Times
+                            Latest Twitter
                         </h3>
                         <ul>
                             <li>
-                                <p>
-                                    09:30 AM – 11:00 PM
-                                </p>
+                                <div class="footer_twitter footer_twitter1">
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-twitter m-l-21"></i>
+                                        </li>
+                                        <li>
+                                            <a href="#">colorlib</a>
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        Activello is a good option. It has a slider built into that displays the featured image in the slider.
+                                        <a href=" https://buff.ly/2zaSfAQ" target="_blank"> https://buff.ly/2zaSfAQ</a>
+                                    </p>
+                                    <span class="footer_date">27 dekabr</span>
+                                </div>
                             </li>
                             <li>
-                                <p>
-                                    Every Day
-                                </p>
+                                <div class="footer_twitter ">
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-twitter m-l-21"></i>
+                                        </li>
+                                        <li>
+                                            <a href="#">colorlib</a>
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        Activello is a good option. It has a slider built into that displays the featured image in the slider.
+                                        <a href="#"> https://buff.ly/2zaSfAQ</a>
+                                    </p>
+                                    <span class="footer_date">27 dekabr</span>
+                                </div>
                             </li>
                         </ul>
                     </div>
-                </div>
-                <div class="footer_part footer_part2">
-                    <h3>
-                        Latest Twitter
-                    </h3>
-                    <ul>
-                        <li>
-                            <div class="footer_twitter footer_twitter1">
-                                <ul>
-                                    <li>
-                                        <i class="fa fa-twitter m-l-21"></i>
-                                    </li>
-                                    <li>
-                                        <a href="#">colorlib</a>
-                                    </li>
-                                </ul>
-                                <p>
-                                    Activello is a good option. It has a slider built into that displays the featured image in the slider.
-                                    <a href="#"> https://buff.ly/2zaSfAQ</a>
-                                </p>
-                                <span class="footer_date">27 dekabr</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="footer_twitter ">
-                                <ul>
-                                    <li>
-                                        <i class="fa fa-twitter m-l-21"></i>
-                                    </li>
-                                    <li>
-                                        <a href="#">colorlib</a>
-                                    </li>
-                                </ul>
-                                <p>
-                                    Activello is a good option. It has a slider built into that displays the featured image in the slider.
-                                    <a href="#"> https://buff.ly/2zaSfAQ</a>
-                                </p>
-                                <span class="footer_date">27 dekabr</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer_part footer_part3">
-                    <h3>
-                        Gallery
-                    </h3>
-                    <div class="footer_gallery flex flex-wrap gap-5 justify-center max-w-5xl mx-auto px-6">
-                        <a data-fancybox="gallery" href="/assets/images/Home_Page/Menu/Dinner.webp">
-                            <img class="rounded"  src="/assets/images/Home_Page/Menu/Dinner.webp" alt="">
-                        </a>
-
-                        <a data-fancybox="gallery" href="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
-                            <img class="rounded"  src="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
-                        </a>
-
-                        <a data-fancybox="gallery" href="/assets/images/header_slider/1.jpg">
-                            <img class="rounded"  src="/assets/images/header_slider/1.jpg" alt="">
-                        </a>
-
-                        <a data-fancybox="gallery" href="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
-                            <img class="rounded"  src="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
-                        </a>
-
-                        <a data-fancybox="gallery" href="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
-                            <img class="rounded"  src="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
-                        </a>
+                    <div class="footer_part footer_part3">
+                        <h3>
+                            Gallery
+                        </h3>
+                        <div class="footer_gallery flex flex-wrap gap-5 justify-center max-w-5xl mx-auto px-6">
+                            <a data-fancybox="gallery" href="/assets/images/Home_Page/Menu/Dinner.webp">
+                                <img class="rounded"  src="/assets/images/Home_Page/Menu/Dinner.webp" alt="">
+                            </a>
+    
+                            <a data-fancybox="gallery" href="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
+                                <img class="rounded"  src="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
+                            </a>
+    
+                            <a data-fancybox="gallery" href="/assets/images/header_slider/1.jpg">
+                                <img class="rounded"  src="/assets/images/header_slider/1.jpg" alt="">
+                            </a>
+    
+                            <a data-fancybox="gallery" href="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
+                                <img class="rounded"  src="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
+                            </a>
+    
+                            <a data-fancybox="gallery" href="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp">
+                                <img class="rounded"  src="/assets/images/Home_Page/footer/photo-gallery-01.jpg.webp" alt="">
+                            </a>
+    
+                           
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="lower">
-            <div class="container">
-                  <!-- Social Media -->
-                  <div class="social">
-                    <ul>
-                        <li><a href="#">
-                            <i class="fa fa-instagram"></i>
-                        </a></li>
-                        <li><a href="#">
-                            <i class="fab fa-facebook-f m-l-21"></i>
-                        </a></li>
-                        <li><a href="#">
-                            <i class="fa fa-twitter m-l-21"></i>
-                        </a></li>
-                    </ul>
-                </div>
-                <!-- Social Media -->
-                <!-- Copyright -->
-                <div class="copyright">
-                    <span>@ 2017 Colorlib.</span>
-                    <a href="#">Get The Theme</a>
+    
+            <div class="lower">
+                <div class="container">
+                      <!-- Social Media -->
+                      <div class="social">
+                        <ul>
+                            <li><a href="http://instagram.com" target="_blank" >
+                                <i class="fa fa-instagram"></i>
+                            </a></li>
+                            <li><a href="http://facebook.com" target="_blank">
+                                <i class="fab fa-facebook-f m-l-21"></i>
+                            </a></li>
+                            <li><a href="http://twitter.com" target="_blank">
+                                <i class="fa fa-twitter m-l-21"></i>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <!-- Social Media -->
+                    <!-- Copyright -->
+                    <div class="copyright">
+                        <span>@ 2017 Colorlib.</span>
+                        <a href="#">Get The Theme</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <!-- End Of Footer -->
+        </footer>
+        <!-- End Of Footer -->
 
-    
+    </section>
+
+
+    <script src="/assets/js/loader.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="https://kit.fontawesome.com/7626b8551c.js" crossorigin="anonymous"></script>
     <script src="/assets/js/common.js"></script>

@@ -1,2 +1,70 @@
 @import "./assets/style/all";
 
+// @import "compass/css3";
+
+html, body {
+	height: 100%;
+}
+
+.loader{
+    width: 100vw;
+    height: 100vh;
+}
+.clock {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	border-radius: 30px;
+	border: solid 5px #d41b22;
+	left: 50%;
+	margin-left: -25px;
+	top: 50%;
+	margin-top: -25px;
+
+	.hours {
+		position: absolute;
+		width: 50px;
+		height: 5px;
+		// background: red;
+		top: 17.5px;
+        left: -5px;
+		-webkit-animation: you-spin-me-round-round-baby-right-round 5s linear 0s infinite;
+		&:before {
+			content: "";
+			height: 5px;
+			width: 16px;
+			position: absolute;
+			right: 11px;
+			background: #d41b22;
+			border-radius: 5px;
+		}
+	}
+	.minutes {
+		position: absolute;
+		width: 50px;
+		height: 5px;
+		// background: blue;
+		top: 17.5px;
+        left:-5px;
+		-webkit-animation: you-spin-me-round-round-baby-right-round 0.9s linear 0s infinite;
+
+		&:before {
+			content: "";
+			height: 5px;
+			width: 22px;
+			position: absolute;
+			right: 5px;
+			background: #d41b22;
+			border-radius: 5px;
+		}
+
+	}
+}
+@-webkit-keyframes you-spin-me-round-round-baby-right-round {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+
+.site-content{
+    display: none;
+}

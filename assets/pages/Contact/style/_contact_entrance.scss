@@ -23,3 +23,221 @@
          
     }
 }
+
+.location{
+    width: 100%;
+    background-image: url("/assets/images/Home_Page/Welcomingentrance/background.webp");
+    @include center;
+    padding-top: 90px;
+    padding-bottom: 115px;
+    .container{
+        max-width: 1200px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 30px;
+        &-map{
+            width: 100%;
+            height: 400px;
+            border: 5px solid #fff;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        &-message{
+            max-width: 870px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10px;
+            form{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                h4{
+                    font-family: Poppins;
+                    font-weight: 500;
+                    font-size: 22px;
+                    color: #222;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    padding-bottom: 60px;
+                    margin-top: 105px;
+
+                }
+                p{
+                        font-family: Montserrat;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 1.7;
+                        color: #666;
+                }
+                textarea{
+                    width: 100%;
+                    resize: none;
+                    height: 200px;
+                    border-style: none;
+                    outline-style: none;
+                    margin-top: 5px;
+                    margin-bottom: 30px;
+                    border: 2px solid #d9d9d9;
+                    &:focus{
+                        border: 2px solid #d61c22;
+                    }
+                    padding-left: 20px;
+                    padding-top: 15px;
+                    border-radius: 10px;
+                    
+        
+                    font-family: Montserrat;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #666;
+                }
+        
+                button{
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 120px;
+                    height: 40px;
+                    border-radius: 10px;
+                    background-color: #222;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 1.1;
+                    color: #fff;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    transition: 0.5s;
+                    margin-top: 15px;
+                    font-family: Montserrat;
+                    &:hover{
+                        background-color: #d41b22;
+                    }
+                }
+                
+                input{
+                    width: 100%;
+                    height: 50px;
+                    border-radius: 10px;
+                    border-style: none;
+                    outline-style: none;
+                    margin-top:5px;
+                    margin-bottom: 20px;
+                    border: 2px solid #d9d9d9;
+                    &:focus{
+                        border: 2px solid #d61c22;
+                    }
+                    padding-left: 20px;
+                    color: #666;
+                    &::placeholder{
+                        font-family: Montserrat;
+                        font-weight: 400;
+                        font-size: 14px;
+                        text-transform: capitalize;
+                    }
+                }
+        
+                .inputs{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                    div{
+                        width: 30%;
+                    }
+                }
+                label{
+                    font-family: Montserrat;
+                    font-weight: 400;
+                    font-size: 15px;
+                    color: #555;
+                }
+                .message_{
+                    width: 100%;
+                }
+            }
+        }
+
+        &-contact{
+            width: 100%;
+            padding-top: 105px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            div{
+                width: 30%;
+                .contact_element{
+                    display: flex;
+                    // justify-content: center;
+                    height: 90px;
+                    i{
+                        padding-right: 40px;
+                        padding-top:5px;
+                        font-size: 22px;
+                    }
+                    h5{
+                        font-family: Poppins;
+                        font-weight: 500;
+                        font-size: 22px;
+                        color: #333;
+                        text-transform: uppercase;
+                        letter-spacing: 3px;
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        font-family: Montserrat;
+                        font-weight: 400;
+                        font-size: 13px;
+                        color: #666;
+                        line-height: 1.7;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:768px){
+    .location{
+        form{
+            .inputs{
+                flex-direction: column;
+                div{
+                    width: 100%!important;
+                }
+            }
+        }
+
+        .container{
+            &-contact{
+                flex-direction: column;
+                .contact_element{
+                    margin:40px 0;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and(max-width:468px){
+    h1{
+        font-size: 30px!important;
+    }
+    .location{
+        .container{
+            &-contact{
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    }
+}

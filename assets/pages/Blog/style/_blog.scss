@@ -438,16 +438,20 @@
                 flex-direction: column;
                 &-right{
                     width: 100%;
+                    padding-right: 10px;
+                    padding-left: 10px;
                     padding-bottom: 80px;
                 }
     
                 &-left{
+                    padding-left: 10px;
+                    padding-right: 10px;
                     width: 100%;
                     .span{
                         flex-wrap: wrap;
                     }
                     .card{
-                        padding-bottom:223px;
+                        padding-bottom:20px;
                     }
                 }
             }

@@ -128,7 +128,7 @@
                         height: 390px;
                         display: flex;
                     
-                        height: 390px;
+                        
                         position: absolute;
                         border-radius: 10px!important;
                         overflow: hidden;
@@ -155,7 +155,7 @@
                             height: 50px;
                             transform-origin: center center;
                             background-color: #ec1d25;
-                            transform: rotateZ(90deg);
+                            
                             transform: translate(-50%,-50%) rotateZ(90deg);
 
                             font-family: Montserrat;
@@ -209,8 +209,7 @@
                                     top: 100%;
                                     width: 70px;
                                     @include center;
-                                    left: 35px;
-                                    transform: translateX(-50%);
+                                  
                                     font-family: Montserrat;
                                     font-weight: 700;
                                     font-size: 12px;
@@ -320,4 +319,88 @@
     }
     
     
+}
+
+@media screen and(max-width:1024px){
+    .events{
+        &-container{
+            .slide{
+                height: 1300px!important;
+                .card{
+                    display: flex;
+                    flex-direction: column;
+                    width: 85%;
+                    height: 780px!important;
+                    overflow:auto;
+                    .picture{
+                        width: 100%!important;
+                    
+                        img{
+                            height: 400px!important;
+                        }
+                    }
+                    span{
+                        top: 0px!important;
+                        left: auto!important;
+                        right: 0%!important;
+                        width: 100%!important;
+                        height: 50px;
+                        transform: translate(0%,0%) rotateZ(0deg)!important;
+                    }
+                    .content{
+                        width: 100%!important;
+                        height: 790px!important;
+                        
+                    }
+                    // transform: rotate(90deg);
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and(max-width:468px){
+    .events{
+        &-container{
+            .slide{
+                height: 1300px!important;
+                .card{
+                    margin:0 10px!important;
+                    .picture{
+                        width: 100%!important;
+                    
+                        img{
+                            height: 350px!important;
+                        }
+                    }
+                    .content{
+                        width: 100%!important;
+                        height: 1000px!important;
+                        ul{
+                            flex-wrap: wrap;
+                            li{
+                                width: 48%!important;
+                                font-size: 40px!important;
+                            }
+                            .event_minutes{
+                                margin-top: 15px;
+                            }
+                            h4{
+                                font-size: 16px!important;
+                            }
+                            p{
+                                font-size: 13px!important;
+                            }
+                            .event_seconds{
+                                margin-top: 15px;
+                            }
+                        }
+                    }
+                    // transform: rotate(90deg);
+                }
+            }
+        }
+    }
+
 }

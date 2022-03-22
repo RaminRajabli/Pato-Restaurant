@@ -271,3 +271,42 @@ footer{
         }
     }
 }
+
+
+
+@media screen and(max-width:768px) {
+    footer{
+        .upper{
+            .container{
+                flex-wrap: wrap;
+                .footer_part{
+                    width: 48%!important;
+                }
+            }
+        }
+    }
+    .section_email{
+        .container{
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and(max-width:468px) {
+    footer{
+        .upper{
+            .container{
+                flex-wrap: wrap;
+                .footer_part{
+                    width: 100%!important;
+                }
+            }
+        }
+        .lower{
+            height: 90px;
+            .container{
+                flex-wrap: wrap;
+            }
+        }
+    }
+}

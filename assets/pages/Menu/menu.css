@@ -439,6 +439,25 @@ header .container .navbar i:hover {
   color: #d41b22;
 }
 
+@media screen and (max-width: 1024px) {
+  header .navbar .menu {
+    width: 0 !important;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  header .social {
+    display: none;
+  }
+  header .container {
+    padding: 0 10px;
+  }
+  header .dropdown .dropdown-menu {
+    width: 100%;
+  }
+}
+
 #entrance {
   min-height: 545px;
   width: 100%;
@@ -892,6 +911,7 @@ header .container .navbar i:hover {
 
 .section_email .container {
   max-width: 1200px;
+  width: 100%;
   padding: 50px 30px 50px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1009,6 +1029,79 @@ header .container .navbar i:hover {
 
 .section_email .container button:hover {
   background-color: #d41b22;
+}
+
+@media screen and (max-width: 768px) {
+  #entrance h1 {
+    font-size: 30px !important;
+  }
+  .section_email .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu_list .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu_list .container .parts {
+    width: 100%;
+  }
+  .menu_lunch .container-cards {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .menu_lunch .container-cards--card {
+    width: 100% !important;
+  }
+  .menu_dinner .container-cards {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .menu_dinner .container-cards--card {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .menu_list .container {
+    padding-left: 10px;
+    padding-right: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu_list .container .parts {
+    width: 100%;
+  }
+  .menu_lunch .container-cards {
+    padding: 0 10px;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .menu_lunch .container-cards--card {
+    width: 100% !important;
+  }
+  .menu_dinner .container-cards {
+    padding: 0 10px;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .menu_dinner .container-cards--card {
+    width: 100% !important;
+  }
 }
 
 footer {
@@ -1279,5 +1372,100 @@ footer .lower .container .copyright a {
 
 footer .lower .container .copyright a:hover {
   color: #d41b22;
+}
+
+@media screen and (max-width: 768px) {
+  footer .upper .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer .upper .container .footer_part {
+    width: 48% !important;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  footer .upper .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer .upper .container .footer_part {
+    width: 100% !important;
+  }
+  footer .lower {
+    height: 90px;
+  }
+  footer .lower .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.loader {
+  width: 100vw;
+  height: 100vh;
+}
+
+.clock {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  border: solid 5px #d41b22;
+  left: 50%;
+  margin-left: -25px;
+  top: 50%;
+  margin-top: -25px;
+}
+
+.clock .hours {
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  top: 17.5px;
+  left: -5px;
+  -webkit-animation: you-spin-me-round-round-baby-right-round 5s linear 0s infinite;
+}
+
+.clock .hours:before {
+  content: "";
+  height: 5px;
+  width: 16px;
+  position: absolute;
+  right: 11px;
+  background: #d41b22;
+  border-radius: 5px;
+}
+
+.clock .minutes {
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  top: 17.5px;
+  left: -5px;
+  -webkit-animation: you-spin-me-round-round-baby-right-round 0.9s linear 0s infinite;
+}
+
+.clock .minutes:before {
+  content: "";
+  height: 5px;
+  width: 22px;
+  position: absolute;
+  right: 5px;
+  background: #d41b22;
+  border-radius: 5px;
+}
+
+@-webkit-keyframes you-spin-me-round-round-baby-right-round {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.site-content {
+  display: none;
 }
 /*# sourceMappingURL=menu.css.map */

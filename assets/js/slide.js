@@ -115,7 +115,7 @@ setTimeout(()=>{
                     }
     
                     if(element.classList.contains("button2")){
-                        console.log(element)
+                        // console.log(element)
                         setTimeout(()=>{
                             element.classList.add("animate__animated","animate__zoomIn");
                             element.addEventListener('animationend',()=>{
@@ -190,46 +190,47 @@ let swiper2 = new Swiper('.mySwiper2', {
   });
 
 
-//   customer
-let customer = document.querySelectorAll(".customer_picture");
-let customer_content = document.querySelectorAll(".customer-content");
-
-
-customer_content.forEach((element)=>{
-    element.addEventListener('animationend',()=>{
-        element.classList.remove("animate__animated","animate__fadeInUp");   
-    })
-})
-
-customer.forEach((element)=>{
-    element.addEventListener('animationend',()=>{
-        element.classList.remove("animate__animated","animate__zoomIn");   
-    })
-})
-
-
-  let swiper3 = new Swiper('.mySwiper3', {
-    spaceBetween: 30,
-    slidesPerView: 1,
-    autoplay:{
-        delay:7000,
-        disableOnInteraction: false,
-    },
-    speed:400,
+  
+  setTimeout(()=>{
+    //   customer
+    let customer = document.querySelectorAll(".customer_picture");
+    let customer_content = document.querySelectorAll(".customer-content");
     
-    navigation: {
-          nextEl: ".swiper-button-next3",
-          prevEl: ".swiper-button-prev3",
-    },
-    pagination: {
-          el: ".swiper-pagination3",
-          clickable: true,
-    },
-
-    on:{
-        slideChange:function(swiper){
-                customer[swiper.realIndex].classList.add("animate__animated","animate__zoomIn");
-                customer_content[swiper.realIndex].classList.add("animate__animated","animate__fadeInUp");
-        }
-    }
-  });
+    
+    customer_content.forEach((element)=>{
+        element.addEventListener('animationend',()=>{
+            element.classList.remove("animate__animated","animate__fadeInUp");   
+        })
+    })
+    
+    customer.forEach((element)=>{
+        element.addEventListener('animationend',()=>{
+            element.classList.remove("animate__animated","animate__zoomIn");   
+        })
+    })
+    let swiper3 = new Swiper('.mySwiper3', {
+      spaceBetween: 30,
+      slidesPerView: 1,
+      autoplay:{
+          delay:7000,
+          disableOnInteraction: false,
+      },
+      speed:400,
+      
+      navigation: {
+            nextEl: ".swiper-button-next3",
+            prevEl: ".swiper-button-prev3",
+      },
+      pagination: {
+            el: ".swiper-pagination3",
+            clickable: true,
+      },
+    
+      on:{
+          slideChange:function(swiper){
+                  customer[swiper.realIndex].classList.add("animate__animated","animate__zoomIn");
+                  customer_content[swiper.realIndex].classList.add("animate__animated","animate__fadeInUp");
+          }
+      }
+    });
+},4000)
